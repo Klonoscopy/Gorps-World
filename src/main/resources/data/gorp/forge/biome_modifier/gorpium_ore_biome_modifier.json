@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "gorp:spirit_meadow",
+  "features": "gorp:gorpium_ore",
+  "step": "underground_ores"
+}

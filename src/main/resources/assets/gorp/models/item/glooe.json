@@ -1,0 +1,7 @@
+{
+  "parent": "gorp:custom/glooe_block",
+  "textures": {
+    "all": "gorp:block/glooe_block",
+    "particle": "gorp:item/glooe_block"
+  }
+}

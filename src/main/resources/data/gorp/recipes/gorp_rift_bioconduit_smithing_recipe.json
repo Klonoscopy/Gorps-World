@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "gorp:gorp_rift_bioconduit_smithing_template"
+  },
+  "base": {
+    "item": "gorp:bitten_gorp"
+  },
+  "addition": {
+    "item": "gorp:gorp_coin"
+  },
+  "result": {
+    "item": "gorp:gorp_rift_bioconduit"
+  }
+}

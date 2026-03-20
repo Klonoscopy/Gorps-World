@@ -1,0 +1,7 @@
+{
+  "parent": "gorp:custom/gorp_hammer",
+  "textures": {
+    "layer0": "gorp:block/gorp_hammer",
+    "particle": "gorp:item/gorp_hammer"
+  }
+}

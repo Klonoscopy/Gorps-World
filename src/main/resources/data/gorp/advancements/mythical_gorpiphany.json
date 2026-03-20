@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "gorp:gorp_sprout"
+    },
+    "title": {
+      "translate": "advancements.mythical_gorpiphany.title"
+    },
+    "description": {
+      "translate": "advancements.mythical_gorpiphany.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "mythical_gorpiphany_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "gorp:gorpcess_denied"
+}

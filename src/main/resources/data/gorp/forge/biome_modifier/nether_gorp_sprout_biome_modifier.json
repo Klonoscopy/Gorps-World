@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "gorp:nether_gorp_sprout",
+  "step": "vegetal_decoration"
+}

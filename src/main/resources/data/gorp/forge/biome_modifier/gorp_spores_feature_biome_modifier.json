@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "gorp:spirit_meadow",
+  "features": "gorp:gorp_spores_feature",
+  "step": "surface_structures"
+}

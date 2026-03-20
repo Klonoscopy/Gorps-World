@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gorp",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gorp:consolidated_gorp_cube"
+    }
+  ],
+  "result": {
+    "item": "gorp:gorp",
+    "count": 4
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gorp:item/dicey_gorp_upgrade_smithing_template"
+  }
+}

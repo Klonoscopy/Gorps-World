@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="gorp"
+version="0.10.0"
+displayName="Gorp's World"
+displayURL="https://gorps.world/"
+logoFile="logo.png"
+credits="Created using mod maker MCreator"
+authors="gorpdev"
+description="You're in his world now."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.gorp]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

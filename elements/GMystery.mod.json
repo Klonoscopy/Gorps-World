@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "painting",
+  "definition": {
+    "texture": "g_mystery",
+    "width": 16,
+    "height": 32,
+    "title": "G Mystery",
+    "author": "Gorp's World Dev"
+  }
+}

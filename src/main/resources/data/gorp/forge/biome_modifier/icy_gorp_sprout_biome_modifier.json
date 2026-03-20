@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "snowy_taiga",
+    "snowy_plains",
+    "snowy_beach",
+    "snowy_slopes",
+    "frozen_peaks",
+    "ice_spikes",
+    "jagged_peaks"
+  ],
+  "features": "gorp:icy_gorp_sprout",
+  "step": "vegetal_decoration"
+}

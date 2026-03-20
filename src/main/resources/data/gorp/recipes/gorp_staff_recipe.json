@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gorp",
+  "category": "equipment",
+  "pattern": [
+    " ab",
+    " b ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "gorp:bitten_gorp"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "gorp:gorp_staff",
+    "count": 1
+  }
+}

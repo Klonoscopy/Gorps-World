@@ -1,0 +1,118 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-11-29 18:51:07 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_plains": "2024-12-22 22:42:06 -0700",
+      "minecraft:plains": "2024-11-29 18:51:07 -0700"
+    },
+    "done": false
+  },
+  "gorp:permission_gorped": {
+    "criteria": {
+      "permission_gorped_0": "2024-11-29 18:51:14 -0700"
+    },
+    "done": true
+  },
+  "minecraft:end/kill_dragon": {
+    "criteria": {
+      "killed_dragon": "2024-11-29 18:53:42 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/sniper_duel": {
+    "criteria": {
+      "killed_skeleton": "2024-11-29 18:54:28 -0700"
+    },
+    "done": true
+  },
+  "gorp:ready_set_gorp": {
+    "criteria": {
+      "ready_set_gorp_0": "2024-11-29 18:55:43 -0700"
+    },
+    "done": true
+  },
+  "gorp:altar_be_thy_gorp": {
+    "criteria": {
+      "altar_be_thy_gorp_0": "2024-11-29 18:55:48 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2024-12-22 20:43:39 -0700"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-05-25 01:36:39 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "gorp:a_step_into_the_gorp": {
+    "criteria": {
+      "a_step_into_the_gorp_0": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2025-05-25 01:36:41 -0600"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

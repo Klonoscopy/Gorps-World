@@ -1,0 +1,109 @@
+{
+  "has_precipitation": true,
+  "temperature": 2,
+  "downfall": 0.5,
+  "effects": {
+    "mood_sound": {
+      "sound": "gorp:gorp_ambience",
+      "tick_delay": 200,
+      "offset": 8,
+      "block_search_extent": 2
+    },
+    "particle": {
+      "options": {
+        "type": "gorp:gorp_suds"
+      },
+      "probability": 0.001
+    },
+    "foliage_color": -3604662,
+    "grass_color": -3670204,
+    "sky_color": -8144667,
+    "fog_color": -15524341,
+    "water_color": -5595141,
+    "water_fog_color": -15723731
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [
+      {
+        "type": "gorp:gorp_buddy",
+        "weight": 40,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "gorp:gorpling",
+        "weight": 60,
+        "minCount": 14,
+        "maxCount": 20
+      },
+      {
+        "type": "lightning_bolt",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "experience_orb",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [
+      "minecraft:forest_rock"
+    ],
+    [],
+    [
+      "minecraft:desert_well"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "gorp:spirit_meadow_tree",
+      "minecraft:forest_flowers",
+      "minecraft:patch_tall_grass",
+      "minecraft:trees_swamp",
+      "minecraft:flower_swamp",
+      "minecraft:patch_grass_normal",
+      "minecraft:patch_dead_bush",
+      "minecraft:patch_waterlily",
+      "minecraft:brown_mushroom_swamp",
+      "minecraft:red_mushroom_swamp",
+      "minecraft:patch_grass_jungle",
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:cave_vines",
+      "minecraft:lush_caves_clay",
+      "minecraft:lush_caves_vegetation",
+      "minecraft:rooted_azalea_tree",
+      "minecraft:spore_blossom",
+      "minecraft:classic_vines_cave_feature",
+      "minecraft:patch_grass_plain",
+      "minecraft:flower_meadow",
+      "minecraft:trees_meadow"
+    ],
+    []
+  ]
+}

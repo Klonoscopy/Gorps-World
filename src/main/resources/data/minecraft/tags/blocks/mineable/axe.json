@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gorp:gorp_altar_full_icy",
+    "gorp:gorp_altar_full",
+    "gorp:gorp_altar_full_s_picy",
+    "gorp:gorp_altar"
+  ]
+}

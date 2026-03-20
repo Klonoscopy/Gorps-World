@@ -1,0 +1,50 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "gorp_hammer",
+    "customModelName": "gorp_hammer:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Gorp Hammer",
+    "specialInformation": {
+      "fixedValue": [
+        "§7On hit, inflict Jorp on you and your target"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:GorpCreativeTab"
+      }
+    ],
+    "efficiency": 2.5,
+    "attackSpeed": 1.6,
+    "enchantability": 999,
+    "damageVsEntity": 7.0,
+    "usageCount": 100,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Gorp"
+      },
+      {
+        "value": "CUSTOM:BittenGorp"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "GorpHammerRightclicked"
+    },
+    "onEntityHitWith": {
+      "name": "GorpHammerLivingEntityIsHitWithTool"
+    }
+  }
+}

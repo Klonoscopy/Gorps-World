@@ -1,0 +1,23 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "gorp",
+    "unlockingItems": [],
+    "cookingBookCategory": "FOOD",
+    "xpReward": 3.0,
+    "cookingTime": 120,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:BittenGorp"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:GorpJuice"
+    },
+    "name": "gorp_juice_recipe",
+    "namespace": "mod"
+  }
+}

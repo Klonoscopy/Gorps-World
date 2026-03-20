@@ -1,0 +1,78 @@
+{
+  "_fv": 79,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "gorp_spear",
+    "customModelName": "gorp_spear:default",
+    "customProperties": {},
+    "states": [],
+    "animations": [],
+    "name": "Gorp Spear",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:GorpCreativeTab"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 15,
+    "useDuration": 72000,
+    "toolType": 1.0,
+    "damageCount": 1200,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "isPiglinCurrency": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 7.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7Hold right-click and release to be sent flying",
+        "§7in whichever direction you're looking."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "GorpSpearRightclicked"
+    },
+    "onStoppedUsing": {
+      "name": "GorpSpearFling"
+    },
+    "onEntitySwing": {
+      "name": "GorpSpearEntitySwingsItem"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "spear",
+    "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": []
+  }
+}

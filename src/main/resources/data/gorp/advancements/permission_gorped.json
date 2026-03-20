@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "gorp:bitten_gorp"
+    },
+    "title": {
+      "translate": "advancements.permission_gorped.title"
+    },
+    "description": {
+      "translate": "advancements.permission_gorped.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "permission_gorped_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 15,
+    "function": "gorp:gorp_coin_on_advancement",
+    "recipes": [
+      "gorp:gorp_hammer_recipe",
+      "gorp:gorp_staff_recipe",
+      "gorp:gorp_juice_recipe",
+      "gorp:gorp_spear_recipe",
+      "gorp:gorp_fabric_recipe",
+      "gorp:consolidated_gorp_cube_recipe",
+      "gorp:gorp_recipe"
+    ]
+  },
+  "parent": "gorp:gorp_speaks"
+}

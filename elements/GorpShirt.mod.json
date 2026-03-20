@@ -1,0 +1,124 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "gorp_respirator",
+    "enableBody": true,
+    "textureBody": "gorp_shirt",
+    "enableLeggings": true,
+    "textureLeggings": "gorp_pajamas",
+    "enableBoots": true,
+    "textureBoots": "impact_echoing_gorp_footwear",
+    "onHelmetTick": {
+      "name": "GorpShirtHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "GorpShirtTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "GorpShirtLeggingsTickEvent"
+    },
+    "onBootsTick": {
+      "name": "GorpShirtBootsTickEvent"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:GorpCreativeTab"
+      }
+    ],
+    "armorTextureFile": "gorp",
+    "helmetName": "Gorp Respirator",
+    "bodyName": "I Love Gorp T-Shirt",
+    "leggingsName": "Gorp Pajamas",
+    "bootsName": "Impact Dampening Gorp Footwear",
+    "helmetSpecialInformation": {
+      "fixedValue": [
+        "§7Alleviates common flu symptoms",
+        "§9§oSet bonus: Gorp makes your heart beat faster"
+      ]
+    },
+    "bodySpecialInformation": {
+      "fixedValue": [
+        "§7Allows the wearer to perform a Double Jorp",
+        "§9§oSet bonus: Gorp makes your heart beat faster"
+      ]
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": [
+        "§7Gives the player a jump boost",
+        "§9§oSet bonus: Gorp makes your heart beat faster"
+      ]
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": [
+        "§7Grants the ability to soften falls from great heights",
+        "§9§oSet bonus: Gorp makes your heart beat faster"
+      ]
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": true
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": true
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": true
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": true
+    },
+    "maxDamage": 0,
+    "damageValueHelmet": 0,
+    "damageValueBody": 0,
+    "damageValueLeggings": 0,
+    "damageValueBoots": 5,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_generic"
+    },
+    "repairItems": []
+  }
+}

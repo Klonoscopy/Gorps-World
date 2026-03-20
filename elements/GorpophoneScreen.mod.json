@@ -1,0 +1,123 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "empty_gorp_coin_slot.png",
+          "spritesCount": 1,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 206,
+          "y": 65,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:GorpCoin"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GorpophoneCostButton"
+          },
+          "onTakenFromSlot": {
+            "name": "GorpophoneCostButton"
+          },
+          "onStackTransfer": {
+            "name": "GorpophoneCostButton"
+          },
+          "x": 205,
+          "y": 64,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Send a Gorpcast",
+          "name": "gorpcastmsg",
+          "width": 162,
+          "height": 20,
+          "x": 133,
+          "y": 95,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button",
+          "image": "button.png",
+          "hoveredImage": "button_highlighted.png",
+          "onClick": {
+            "name": "GorpophoneButtonClickProcedure"
+          },
+          "x": 247,
+          "y": 64,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_gorpophone",
+          "text": {
+            "fixedValue": "Gorpophone"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_requires_gorp_coin",
+          "text": {
+            "fixedValue": "Requires Gorp Coin",
+            "name": "GorpophoneScreenValue"
+          },
+          "displayCondition": {
+            "name": "GorpophoneRequirementTooltipDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 245,
+          "y": 61,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

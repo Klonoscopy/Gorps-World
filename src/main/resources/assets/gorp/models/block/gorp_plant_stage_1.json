@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "gorp:block/gorp_plant_1",
+    "particle": "gorp:block/gorp_plant_1"
+  },
+  "render_type": "cutout"
+}

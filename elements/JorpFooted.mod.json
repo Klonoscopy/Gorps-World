@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Jorp-footed",
+    "icon": "jorp_footed",
+    "color": {
+      "value": -12354298,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ENTITY_GRAVITY"
+        },
+        "amount": -0.2,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "STEP_HEIGHT"
+        },
+        "amount": 0.3,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": 0.06999999999999999,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "SWIM_SPEED"
+        },
+        "amount": 0.09999999999999999,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ],
+    "onExpired": {
+      "name": "JorpFootedEffectExpires"
+    }
+  }
+}

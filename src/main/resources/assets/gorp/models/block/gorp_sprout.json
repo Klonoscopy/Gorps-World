@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "gorp:block/gorp_sprout",
+    "particle": "gorp:block/gorp_sprout"
+  },
+  "render_type": "cutout"
+}

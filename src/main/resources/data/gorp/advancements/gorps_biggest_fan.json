@@ -1,0 +1,88 @@
+{
+  "display": {
+    "icon": {
+      "item": "gorp:gorp_merch_chestplate"
+    },
+    "title": {
+      "translate": "advancements.gorps_biggest_fan.title"
+    },
+    "description": {
+      "translate": "advancements.gorps_biggest_fan.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gorps_biggest_fan_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gorp:gorp_merch_helmet"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "gorps_biggest_fan_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gorp:gorp_merch_chestplate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "gorps_biggest_fan_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gorp:gorp_merch_leggings"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "gorps_biggest_fan_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gorp:gorp_merch_boots"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 15,
+    "function": "gorp:gorp_coin_on_advancement"
+  },
+  "parent": "gorp:permission_gorped"
+}

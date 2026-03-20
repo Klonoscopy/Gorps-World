@@ -1,0 +1,7 @@
+{
+  "parent": "gorp:custom/gorp_staff",
+  "textures": {
+    "layer0": "gorp:block/gorp_staff",
+    "particle": "gorp:item/gorp_staff"
+  }
+}

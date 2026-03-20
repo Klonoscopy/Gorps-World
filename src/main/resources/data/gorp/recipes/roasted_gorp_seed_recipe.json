@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "gorp",
+  "category": "food",
+  "experience": 0.35,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "gorp:gorp_seed"
+  },
+  "result": "gorp:roasted_gorp_seed"
+}

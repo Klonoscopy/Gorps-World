@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "painting",
+  "definition": {
+    "texture": "gorbet",
+    "width": 32,
+    "height": 16,
+    "title": "Gorbet",
+    "author": "Kristoffer Zetterstrand & Gorp's World Dev"
+  }
+}

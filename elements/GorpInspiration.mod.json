@@ -1,0 +1,38 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Gorp Inspiration",
+    "icon": "gorp_inspiration",
+    "color": {
+      "value": -3342490,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "JUMP_STRENGTH"
+        },
+        "amount": 0.1,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "onStarted": {
+      "name": "GorpInspirationEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "GorpShirtTickEvent"
+    },
+    "onExpired": {
+      "name": "GorpInspirationEffectExpires"
+    }
+  }
+}

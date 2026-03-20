@@ -1,0 +1,9 @@
+{
+  "_fv": 79,
+  "_type": "function",
+  "definition": {
+    "code": "give @p gorp:gorp_coin 1",
+    "name": "gorp_coin_on_advancement",
+    "namespace": "mod"
+  }
+}

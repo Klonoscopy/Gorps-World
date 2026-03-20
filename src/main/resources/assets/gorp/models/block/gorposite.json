@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "gorp:block/gorpolite",
+    "up": "gorp:block/gorposite",
+    "north": "gorp:block/gorposite_side",
+    "east": "gorp:block/gorposite_side",
+    "south": "gorp:block/gorposite_side",
+    "west": "gorp:block/gorposite_side",
+    "particle": "gorp:block/gorpolite"
+  },
+  "render_type": "solid"
+}

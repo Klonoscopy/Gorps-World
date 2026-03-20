@@ -1,0 +1,24 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Iron-H Damage",
+    "icon": "iron_h_damage",
+    "color": {
+      "value": -8647136,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "IronHDamageEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "IronHDamageOnEffectActiveTick"
+    }
+  }
+}

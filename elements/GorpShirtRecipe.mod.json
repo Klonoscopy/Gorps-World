@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "gorp",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GorpFabric"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:GorpFabric"
+      },
+      {
+        "value": "Items.DYE#16"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "CUSTOM:Gorp"
+      },
+      {
+        "value": "CUSTOM:GorpFabric"
+      },
+      {
+        "value": "CUSTOM:GorpFabric"
+      },
+      {
+        "value": "CUSTOM:GorpFabric"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GorpShirt.body"
+    },
+    "name": "gorp_shirt_recipe",
+    "namespace": "mod"
+  }
+}

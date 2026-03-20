@@ -1,0 +1,78 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "gorp:block/gorpolite"
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 90
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 180
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 270
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "y": 90
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 180,
+        "y": 90
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 270,
+        "y": 90
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "y": 180
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 180,
+        "y": 180
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 270,
+        "y": 180
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "y": 270
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 90,
+        "y": 270
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 180,
+        "y": 270
+      },
+      {
+        "model": "gorp:block/gorpolite",
+        "x": 270,
+        "y": 270
+      }
+    ]
+  }
+}

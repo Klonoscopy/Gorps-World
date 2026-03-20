@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "gorp:dicey_gorp_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "gorp:consolidated_gorp_cube"
+  },
+  "addition": {
+    "item": "minecraft:gold_block"
+  },
+  "result": {
+    "item": "gorp:dicey_gorp"
+  }
+}

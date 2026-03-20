@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "gorp:bitten_gorp"
+    },
+    "title": {
+      "translate": "advancements.gorpivore.title"
+    },
+    "description": {
+      "translate": "advancements.gorpivore.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gorpivore_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "function": "gorp:gorp_coin_on_advancement"
+  },
+  "parent": "gorp:permission_gorped"
+}

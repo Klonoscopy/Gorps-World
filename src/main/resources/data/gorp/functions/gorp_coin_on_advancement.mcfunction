@@ -1,0 +1,1 @@
+give @p gorp:gorp_coin 1

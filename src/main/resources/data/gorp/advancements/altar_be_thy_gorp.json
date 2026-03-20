@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "gorp:gorp_altar"
+    },
+    "title": {
+      "translate": "advancements.altar_be_thy_gorp.title"
+    },
+    "description": {
+      "translate": "advancements.altar_be_thy_gorp.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "altar_be_thy_gorp_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "gorp:gorp_altar"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "gorp:mythical_gorpiphany"
+}

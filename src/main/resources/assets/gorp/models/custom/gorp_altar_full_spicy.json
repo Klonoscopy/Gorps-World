@@ -1,0 +1,1109 @@
+{
+  "format_version": "1.9.0",
+  "credit": "eva was here <3",
+  "parent": "block/block",
+  "texture_size": [
+    64,
+    64
+  ],
+  "elements": [
+    {
+      "name": "base",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        2,
+        16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0.75,
+            10,
+            1.25
+          ],
+          "texture": "#all",
+          "cullface": "north"
+        },
+        "east": {
+          "uv": [
+            6.75,
+            4,
+            7.25,
+            0
+          ],
+          "rotation": 90,
+          "texture": "#all",
+          "cullface": "east"
+        },
+        "south": {
+          "uv": [
+            10,
+            2.75,
+            6,
+            3.25
+          ],
+          "rotation": 180,
+          "texture": "#all",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [
+            8.75,
+            0,
+            9.25,
+            4
+          ],
+          "rotation": 270,
+          "texture": "#all",
+          "cullface": "west"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            10,
+            4
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            10,
+            4
+          ],
+          "texture": "#all",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "name": "leg",
+      "from": [
+        4,
+        2,
+        4
+      ],
+      "to": [
+        12,
+        15,
+        12
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            0.75,
+            4,
+            4
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            2,
+            0.75,
+            0,
+            4
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            4,
+            0.75,
+            6,
+            4
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            0,
+            0.75,
+            2,
+            4
+          ],
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "top",
+      "from": [
+        0.0125,
+        12,
+        3
+      ],
+      "to": [
+        15.9875,
+        16,
+        16
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            4,
+            3.99375,
+            5
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            3.5,
+            5,
+            0.25,
+            6
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            0,
+            6,
+            3.99375,
+            7
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            0.25,
+            5,
+            3.5,
+            6
+          ],
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            4,
+            4,
+            7.99375,
+            7.25
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        },
+        "down": {
+          "uv": [
+            8,
+            4,
+            11.99375,
+            7.25
+          ],
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "drapery_top",
+      "from": [
+        4.0125,
+        12,
+        3
+      ],
+      "to": [
+        11.9875,
+        16,
+        16
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "south": {
+          "uv": [
+            6,
+            12,
+            7.99375,
+            13
+          ],
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            4,
+            12,
+            5.99375,
+            15.25
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_0",
+      "from": [
+        6.5,
+        15.8,
+        2.8
+      ],
+      "to": [
+        8.5,
+        16.3,
+        9.3
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            5.75,
+            11.25,
+            6.75,
+            11.5
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            5.75,
+            8.25,
+            6,
+            11.5
+          ],
+          "rotation": 270,
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            6.75,
+            8.25,
+            5.75,
+            8.5
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            6.5,
+            8.25,
+            6.75,
+            11.5
+          ],
+          "rotation": 90,
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            5.75,
+            8.25,
+            6.75,
+            11.5
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_2",
+      "from": [
+        5.5,
+        15.8,
+        3.3
+      ],
+      "to": [
+        6.5,
+        16.3,
+        8.8
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6.75,
+            11,
+            7.25,
+            11.25
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            7.25,
+            8.5,
+            6.75,
+            8.75
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            7,
+            8.5,
+            7.25,
+            11.25
+          ],
+          "rotation": 90,
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            6.75,
+            8.5,
+            7.25,
+            11.25
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_1",
+      "from": [
+        8.5,
+        15.8,
+        7.8
+      ],
+      "to": [
+        10,
+        16.3,
+        8.8
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            5,
+            8.75,
+            5.75,
+            9
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            5,
+            8.5,
+            5.25,
+            9
+          ],
+          "rotation": 270,
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            5.75,
+            8.5,
+            5,
+            8.75
+          ],
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            5,
+            8.5,
+            5.75,
+            9
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_3",
+      "from": [
+        5,
+        15.8,
+        3.8
+      ],
+      "to": [
+        5.5,
+        16.3,
+        8.3
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            7.25,
+            10.75,
+            7.5,
+            11
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            7.5,
+            8.75,
+            7.25,
+            9
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            7.25,
+            8.75,
+            7.5,
+            11
+          ],
+          "rotation": 90,
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            7.25,
+            8.75,
+            7.5,
+            11
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_4",
+      "from": [
+        8.5,
+        15.8,
+        2.3
+      ],
+      "to": [
+        9.5,
+        16.3,
+        7.8
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            5.25,
+            11.5,
+            5.75,
+            11.75
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            5.25,
+            9,
+            5.5,
+            11.75
+          ],
+          "rotation": 270,
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            5.25,
+            9,
+            5.75,
+            11.75
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_5",
+      "from": [
+        4.5,
+        15.8,
+        4.8
+      ],
+      "to": [
+        5,
+        16.3,
+        7.8
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            7.5,
+            10.25,
+            7.75,
+            10.5
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            7.75,
+            9,
+            7.5,
+            9.25
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            7.5,
+            9,
+            7.75,
+            10.5
+          ],
+          "rotation": 90,
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            7.5,
+            9,
+            7.75,
+            10.5
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_6",
+      "from": [
+        9.5,
+        15.8,
+        2.8
+      ],
+      "to": [
+        10.5,
+        16.3,
+        7.3
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4.75,
+            11.25,
+            5.25,
+            11.5
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            4.75,
+            9.25,
+            5,
+            11.5
+          ],
+          "rotation": 270,
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            5.25,
+            9.25,
+            4.75,
+            9.5
+          ],
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            4.75,
+            9.25,
+            5.25,
+            11.5
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_7",
+      "from": [
+        10.5,
+        15.8,
+        3.3
+      ],
+      "to": [
+        11,
+        16.3,
+        6.8
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4.5,
+            11,
+            4.75,
+            11.25
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            4.5,
+            9.5,
+            4.75,
+            11.25
+          ],
+          "rotation": 270,
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            4.75,
+            9.5,
+            4.5,
+            9.75
+          ],
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            4.5,
+            9.5,
+            4.75,
+            11.25
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_8",
+      "from": [
+        11,
+        15.8,
+        3.8
+      ],
+      "to": [
+        11.5,
+        16.3,
+        6.3
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4.25,
+            10.75,
+            4.5,
+            11
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            4.25,
+            9.75,
+            4.5,
+            11
+          ],
+          "rotation": 270,
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            4.5,
+            9.75,
+            4.25,
+            10
+          ],
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            4.25,
+            9.75,
+            4.5,
+            11
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_9",
+      "from": [
+        6,
+        15.8,
+        2.8
+      ],
+      "to": [
+        6.5,
+        16.3,
+        3.3
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6.75,
+            11.25,
+            7,
+            11.5
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            6.75,
+            11.25,
+            7,
+            11.5
+          ],
+          "rotation": 90,
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            6.75,
+            11.25,
+            7,
+            11.5
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_10",
+      "from": [
+        9.5,
+        15.8,
+        2.3
+      ],
+      "to": [
+        10,
+        16.3,
+        2.8
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            5,
+            11.5,
+            5.25,
+            11.75
+          ],
+          "texture": "#all"
+        },
+        "east": {
+          "uv": [
+            5,
+            11.5,
+            5.25,
+            11.75
+          ],
+          "rotation": 270,
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            5,
+            11.5,
+            5.25,
+            11.75
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "molten_gorp_11",
+      "from": [
+        7,
+        15.8,
+        2.3
+      ],
+      "to": [
+        8.5,
+        16.3,
+        2.8
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          15.8,
+          5.8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            5.75,
+            11.5,
+            6.5,
+            11.75
+          ],
+          "texture": "#all"
+        },
+        "west": {
+          "uv": [
+            6.25,
+            11.5,
+            6.5,
+            11.75
+          ],
+          "rotation": 90,
+          "texture": "#all"
+        },
+        "up": {
+          "uv": [
+            5.75,
+            11.5,
+            6.5,
+            11.75
+          ],
+          "rotation": 180,
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "drapery_front",
+      "from": [
+        4,
+        7.475,
+        0.3
+      ],
+      "to": [
+        12,
+        13.475,
+        0.325
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          13.475,
+          0.325
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            12.25,
+            8,
+            13.75
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            6,
+            12.25,
+            8,
+            13.75
+          ],
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "name": "drapery_back",
+      "from": [
+        4,
+        11.75,
+        13.85
+      ],
+      "to": [
+        12,
+        14.75,
+        13.85
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          14.75,
+          13.85
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            13,
+            8,
+            13.75
+          ],
+          "texture": "#all"
+        },
+        "south": {
+          "uv": [
+            6,
+            13,
+            8,
+            13.75
+          ],
+          "texture": "#all"
+        }
+      }
+    }
+  ],
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        135,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    }
+  },
+  "groups": [
+    0,
+    1,
+    2,
+    3,
+    {
+      "name": "molten_gorp",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "color": 0,
+      "children": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    16,
+    17
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:ConsolidatedGorpCube"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Blocks.GOLD_BLOCK"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:DiceyGorpUpgradeSmithingTemplate"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:DiceyGorp"
+    },
+    "name": "dicey_gorp_recipe",
+    "namespace": "mod"
+  }
+}

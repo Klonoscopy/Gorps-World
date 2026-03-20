@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "gorp_generator_side",
+        "top": "gorp_generator_top",
+        "bottom": "gorp_generator_bottom"
+      },
+      "name": "default"
+    }
+  }
+}

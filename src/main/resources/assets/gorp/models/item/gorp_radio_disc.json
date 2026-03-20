@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gorp:item/music_disc_gorp_radio"
+  }
+}

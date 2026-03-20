@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gorp:item/spent_gorp_rift_bioconduit"
+  }
+}

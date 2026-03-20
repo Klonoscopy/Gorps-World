@@ -1,0 +1,45 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "the_murdler",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "The Murdler",
+    "specialInformation": {
+      "fixedValue": [
+        "I LOVE MURDLING MOBES"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:GorpCreativeTab"
+      }
+    ],
+    "efficiency": 31.0,
+    "attackSpeed": 43.0,
+    "enchantability": 1,
+    "damageVsEntity": 129.0,
+    "usageCount": 17349,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Blocks.FURNACE"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "MurdlerLivingEntityIsHitWithTool"
+    }
+  }
+}

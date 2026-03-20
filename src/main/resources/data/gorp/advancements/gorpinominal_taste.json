@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "gorp:gorp_radio_disc"
+    },
+    "title": {
+      "translate": "advancements.gorpinominal_taste.title"
+    },
+    "description": {
+      "translate": "advancements.gorpinominal_taste.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gorpinominal_taste_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "gorp:ready_set_gorp"
+}

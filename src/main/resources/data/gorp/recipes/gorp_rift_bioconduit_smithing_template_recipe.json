@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gorp",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:stone"
+    },
+    "b": {
+      "item": "gorp:gorp_coin"
+    },
+    "c": {
+      "item": "gorp:bitten_gorp"
+    }
+  },
+  "result": {
+    "item": "gorp:gorp_rift_bioconduit_smithing_template",
+    "count": 1
+  }
+}

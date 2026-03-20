@@ -1,0 +1,45 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Gorp Blood Pump",
+    "icon": "blood_pump",
+    "color": {
+      "value": -3484642,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": 0.5,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": 0.5,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
+    "onStarted": {
+      "name": "BloodPumpEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "BloodPumpEffectDisplayOverlayIngame"
+    },
+    "onExpired": {
+      "name": "BloodPumpEffectExpires"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "gorp:gorp"
+    },
+    "title": {
+      "translate": "advancements.a_step_into_the_gorp.title"
+    },
+    "description": {
+      "translate": "advancements.a_step_into_the_gorp.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "a_step_into_the_gorp_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 40
+  },
+  "parent": "gorp:ready_set_gorp"
+}

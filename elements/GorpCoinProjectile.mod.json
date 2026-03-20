@@ -1,0 +1,28 @@
+{
+  "_fv": 79,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:GorpCoin"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "CUSTOM:fling_0"
+    },
+    "igniteFire": false,
+    "disableGravity": false,
+    "power": 1.2,
+    "damage": 3.0,
+    "knockback": 1,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "GorpCoinProjectileProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "GorpCoinProjectileProjectileHitsPlayer"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gorp",
+  "category": "equipment",
+  "pattern": [
+    " ab",
+    "aca",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "gorp:bitten_gorp"
+    },
+    "b": {
+      "item": "gorp:gorp_seed"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "gorp:gorp_spear",
+    "count": 1
+  }
+}

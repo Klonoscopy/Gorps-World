@@ -1,0 +1,9 @@
+{
+  "parent": "gorp:custom/gorp_altar_empty",
+  "textures": {
+    "all": "minecraft:block/oak_planks",
+    "particle": "minecraft:block/oak_planks",
+    "0": "gorp:block/gorp_altar_empty"
+  },
+  "render_type": "solid"
+}

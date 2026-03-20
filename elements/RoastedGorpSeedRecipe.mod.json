@@ -1,0 +1,23 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "gorp",
+    "unlockingItems": [],
+    "cookingBookCategory": "FOOD",
+    "xpReward": 0.35,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:GorpPlantStage0"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:RoastedGorpSeed"
+    },
+    "name": "roasted_gorp_seed_recipe",
+    "namespace": "mod"
+  }
+}

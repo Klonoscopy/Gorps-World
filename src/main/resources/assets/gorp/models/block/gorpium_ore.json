@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "gorp:block/gorpium",
+    "up": "gorp:block/gorpium",
+    "north": "gorp:block/gorpium",
+    "east": "gorp:block/gorpium",
+    "south": "gorp:block/gorpium",
+    "west": "gorp:block/gorpium",
+    "particle": "gorp:block/gorpium"
+  },
+  "render_type": "solid"
+}

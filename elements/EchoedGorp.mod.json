@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "painting",
+  "definition": {
+    "texture": "echoedgorp",
+    "width": 64,
+    "height": 32,
+    "title": "Echoed Gorp",
+    "author": "Gorp's World Dev"
+  }
+}

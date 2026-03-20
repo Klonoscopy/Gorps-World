@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gorp",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gorp:unstable_gorpium_bar"
+    },
+    {
+      "item": "gorp:spicy_gorp"
+    }
+  ],
+  "result": {
+    "item": "gorp:stable_gorpium_bar",
+    "count": 1
+  }
+}

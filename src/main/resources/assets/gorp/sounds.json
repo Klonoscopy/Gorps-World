@@ -1,0 +1,196 @@
+{
+  "gulp": {
+    "subtitle": "subtitles.gulp",
+    "sounds": [
+      {
+        "name": "gorp:gulp",
+        "stream": false
+      }
+    ]
+  },
+  "belch": {
+    "subtitle": "subtitles.belch",
+    "sounds": [
+      {
+        "name": "gorp:belch",
+        "stream": false
+      }
+    ]
+  },
+  "chomp": {
+    "subtitle": "subtitles.chomp",
+    "sounds": [
+      {
+        "name": "gorp:chomp",
+        "stream": false
+      }
+    ]
+  },
+  "gorp_radio": {
+    "sounds": [
+      {
+        "name": "gorp:gorp_radio",
+        "stream": true
+      }
+    ]
+  },
+  "gorp_radio_dangerous_environments": {
+    "sounds": [
+      {
+        "name": "gorp:gorp_radio_dangerous_environments",
+        "stream": true
+      }
+    ]
+  },
+  "gorp_ambience": {
+    "subtitle": "subtitles.gorp_ambience",
+    "sounds": [
+      {
+        "name": "gorp:gorp_ambience_0",
+        "stream": false
+      },
+      {
+        "name": "gorp:gorp_ambience_1",
+        "stream": false
+      },
+      {
+        "name": "gorp:gorp_ambience_2",
+        "stream": false
+      },
+      {
+        "name": "gorp:gorp_ambience_3",
+        "stream": false
+      }
+    ]
+  },
+  "gorp_summon": {
+    "subtitle": "subtitles.gorp_summon",
+    "sounds": [
+      {
+        "name": "gorp:gorp_summon",
+        "stream": false
+      }
+    ]
+  },
+  "bloodpump_heartbeat": {
+    "subtitle": "subtitles.bloodpump_heartbeat",
+    "sounds": [
+      {
+        "name": "gorp:bloodpump_heartbeat_0",
+        "stream": false
+      },
+      {
+        "name": "gorp:bloodpump_heartbeat_1",
+        "stream": false
+      },
+      {
+        "name": "gorp:bloodpump_heartbeat_2",
+        "stream": false
+      }
+    ]
+  },
+  "gorp_radio_new_world": {
+    "sounds": [
+      {
+        "name": "gorp:gorp_radio_new_world",
+        "stream": true
+      }
+    ]
+  },
+  "gorp_burn": {
+    "subtitle": "subtitles.gorp_burn",
+    "sounds": [
+      {
+        "name": "gorp:gorp_burn",
+        "stream": false
+      }
+    ]
+  },
+  "fling_0": {
+    "subtitle": "subtitles.fling_0",
+    "sounds": [
+      {
+        "name": "gorp:fling_0",
+        "stream": false
+      }
+    ]
+  },
+  "fling_1": {
+    "subtitle": "subtitles.fling_1",
+    "sounds": [
+      {
+        "name": "gorp:fling_1",
+        "stream": false
+      }
+    ]
+  },
+  "fling_2": {
+    "subtitle": "subtitles.fling_2",
+    "sounds": [
+      {
+        "name": "gorp:fling_2",
+        "stream": false
+      }
+    ]
+  },
+  "fling_3": {
+    "subtitle": "subtitles.fling_3",
+    "sounds": [
+      {
+        "name": "gorp:fling_3",
+        "stream": false
+      }
+    ]
+  },
+  "jorp_hit": {
+    "subtitle": "subtitles.jorp_hit",
+    "sounds": [
+      {
+        "name": "gorp:jorp_hit",
+        "stream": false
+      }
+    ]
+  },
+  "gorpling_death": {
+    "subtitle": "subtitles.gorpling_death",
+    "sounds": [
+      {
+        "name": "gorp:jorp_hit_crit",
+        "stream": false
+      }
+    ]
+  },
+  "gorpling_hurt": {
+    "subtitle": "subtitles.gorpling_hurt",
+    "sounds": [
+      {
+        "name": "gorp:gorpling_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "pop": {
+    "sounds": [
+      {
+        "name": "gorp:chat_pop",
+        "stream": false
+      }
+    ]
+  },
+  "toast_crunch": {
+    "sounds": [
+      {
+        "name": "gorp:toast_crunch",
+        "stream": false
+      }
+    ]
+  },
+  "murdler_kill": {
+    "sounds": [
+      {
+        "name": "gorp:murdler_kill",
+        "stream": false
+      }
+    ]
+  }
+}

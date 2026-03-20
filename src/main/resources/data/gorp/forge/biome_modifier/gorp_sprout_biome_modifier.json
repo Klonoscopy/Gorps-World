@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "gorp:gorp_sprout",
+  "step": "vegetal_decoration"
+}

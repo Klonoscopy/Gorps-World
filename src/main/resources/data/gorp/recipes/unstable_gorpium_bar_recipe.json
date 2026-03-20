@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "gorp",
+  "category": "misc",
+  "experience": 1.3,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "gorp:gorpium"
+  },
+  "result": "gorp:unstable_gorpium_bar"
+}

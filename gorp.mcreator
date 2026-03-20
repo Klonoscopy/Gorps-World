@@ -1,0 +1,4426 @@
+{
+  "mod_elements": [
+    {
+      "name": "Gorp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/gorp.json",
+          "src/main/java/net/mcreator/gorp/item/GorpItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BittenGorp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bitten_gorp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/bitten_gorp.json",
+          "src/main/java/net/mcreator/gorp/item/BittenGorpItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpCreativeTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_creative_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GorpPlantOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_plant_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpPlantOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpPlantStage3Loot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_plant_stage_3_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/loot_tables/blocks/gorp_plant_stage_3.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpPlantStage0BlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_plant_stage_0_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpPlantStage0BlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpPlantStage0",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_seed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/blockstates/gorp_seed.json",
+          "src/main/resources/assets/gorp/models/item/gorp_seed.json",
+          "src/main/java/net/mcreator/gorp/block/GorpPlantStage0Block.java",
+          "src/main/resources/assets/gorp/models/block/gorp_seed.json",
+          "src/main/resources/data/gorp/loot_tables/blocks/gorp_seed.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpPlantStage1",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_plant_stage_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/gorp_plant_stage_1.json",
+          "src/main/resources/data/gorp/loot_tables/blocks/gorp_plant_stage_1.json",
+          "src/main/resources/assets/gorp/models/block/gorp_plant_stage_1.json",
+          "src/main/java/net/mcreator/gorp/block/GorpPlantStage1Block.java",
+          "src/main/resources/assets/gorp/blockstates/gorp_plant_stage_1.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpPlantStage2",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_plant_stage_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/block/GorpPlantStage2Block.java",
+          "src/main/resources/assets/gorp/models/item/gorp_plant_stage_2.json",
+          "src/main/resources/assets/gorp/models/block/gorp_plant_stage_2.json",
+          "src/main/resources/assets/gorp/blockstates/gorp_plant_stage_2.json",
+          "src/main/resources/data/gorp/loot_tables/blocks/gorp_plant_stage_2.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpPlantStage3",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_plant_stage_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/blockstates/gorp_plant_stage_3.json",
+          "src/main/java/net/mcreator/gorp/block/GorpPlantStage3Block.java",
+          "src/main/resources/assets/gorp/models/item/gorp_plant_stage_3.json",
+          "src/main/resources/assets/gorp/models/block/gorp_plant_stage_3.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpSprout",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_sprout",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/worldgen/configured_feature/gorp_sprout.json",
+          "src/main/java/net/mcreator/gorp/block/GorpSproutBlock.java",
+          "src/main/resources/data/gorp/worldgen/placed_feature/gorp_sprout.json",
+          "src/main/resources/assets/gorp/models/item/gorp_sprout.json",
+          "src/main/resources/assets/gorp/models/block/gorp_sprout.json",
+          "src/main/resources/data/gorp/forge/biome_modifier/gorp_sprout_biome_modifier.json",
+          "src/main/resources/assets/gorp/blockstates/gorp_sprout.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpSproutLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_sprout_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/loot_tables/blocks/gorp_sprout.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpHammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/GorpHammerItem.java",
+          "src/main/resources/assets/gorp/models/item/gorp_hammer.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpHammerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_hammer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_hammer_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpHammerRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_hammer_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpHammerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JorpingEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorping_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/JorpingEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jorping",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorping",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/potion/JorpingMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpHammerLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_hammer_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpHammerLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Plurge",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plurge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/enchantment/PlurgeEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "IronHDamage",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_h_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/potion/IronHDamageMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "IronHDamageOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_h_damage_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/IronHDamageOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoundChomp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sound_chomp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/SoundChompProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpStaffRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_staff_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpStaffRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpStaff",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_staff",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/gorp_staff.json",
+          "src/main/java/net/mcreator/gorp/item/GorpStaffItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PlurgeStrike",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plurge_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/PlurgeStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IronHDamageEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_h_damage_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/IronHDamageEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MarchOfTheGorp",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "march_of_the_gorp",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GorpNightOut",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_night_out",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Gorbet",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorbet",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GorpStaffRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_staff_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_staff_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpJuicePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_juice_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpJuicePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpJuice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorp_juice",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/jorp_juice.json",
+          "src/main/java/net/mcreator/gorp/item/GorpJuiceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ReadySetGorpAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ready_set_gorp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/ready_set_gorp.json"
+        ]
+      }
+    },
+    {
+      "name": "JorpingEnchantment",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/enchantment/JorpingEnchantmentEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpJuiceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_juice_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_juice_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "JorpingHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorping_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/JorpingHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpAltar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/block/GorpAltarBlock.java",
+          "src/main/resources/assets/gorp/blockstates/gorp_altar.json",
+          "src/main/resources/data/gorp/loot_tables/blocks/gorp_altar.json",
+          "src/main/resources/assets/gorp/models/item/gorp_altar.json",
+          "src/main/resources/assets/gorp/models/block/gorp_altar.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarFull",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_full",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/block/GorpAltarFullBlock.java",
+          "src/main/resources/assets/gorp/models/item/gorp_altar_full.json",
+          "src/main/resources/assets/gorp/blockstates/gorp_altar_full.json",
+          "src/main/resources/assets/gorp/models/block/gorp_altar_full.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarUIFull",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_ui_full",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/world/inventory/GorpAltarUIFullMenu.java",
+          "src/main/java/net/mcreator/gorp/client/gui/GorpAltarUIFullScreen.java",
+          "src/main/java/net/mcreator/gorp/network/GorpAltarUIFullButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarFullLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_full_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/loot_tables/blocks/gorp_altar_full.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_altar_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpSpear",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_spear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/gorp_spear.json",
+          "src/main/java/net/mcreator/gorp/item/GorpSpearItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpSpearRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_spear_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_spear_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PermissionGranted",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "permission_gorped",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/permission_gorped.json"
+        ]
+      }
+    },
+    {
+      "name": "BittenGorpRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bitten_gorp_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/BittenGorpRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpcessDenied",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpcess_denied",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/gorpcess_denied.json"
+        ]
+      }
+    },
+    {
+      "name": "MythicalGorpiphany",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythical_gorpiphany",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/mythical_gorpiphany.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpDream",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_dream",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpDreamProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpSpeaks",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_speaks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/gorp_speaks.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarSend",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_send",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpAltarSendProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpAltarOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GMystery",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "g_mystery",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GorpShirt",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_merch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/GorpShirtItem.java",
+          "src/main/resources/assets/gorp/models/item/gorp_merch_boots.json",
+          "src/main/resources/assets/gorp/models/item/gorp_merch_leggings.json",
+          "src/main/resources/assets/gorp/models/item/gorp_merch_chestplate.json",
+          "src/main/resources/assets/gorp/models/item/gorp_merch_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpFabric",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_fabric",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/GorpFabricItem.java",
+          "src/main/resources/assets/gorp/models/item/gorp_fabric.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpFabricRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_fabric_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_fabric_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpShirtRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_shirt_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_shirt_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpRespiratorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_respirator_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_respirator_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpPajamasRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_pajamas_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_pajamas_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpsBiggestFan",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorps_biggest_fan",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/gorps_biggest_fan.json"
+        ]
+      }
+    },
+    {
+      "name": "AltarBeThyGorp",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_be_thy_gorp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/altar_be_thy_gorp.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpShirtHelmetTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpShirtHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpShirtLeggingsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_leggings_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpShirtLeggingsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic"
+      }
+    },
+    {
+      "name": "Jorpkey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorpkey",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/network/JorpkeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "JorpkeyOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorpkey_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/JorpkeyOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpShirtTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_shirt_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpShirtTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JorpkeyOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorpkey_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/JorpkeyOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ConsolidatedGorpCube",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "consolidated_gorp_cube",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/ConsolidatedGorpCubeItem.java",
+          "src/main/resources/assets/gorp/models/item/consolidated_gorp_cube.json"
+        ]
+      }
+    },
+    {
+      "name": "ConsolidatedGorpCubeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "consolidated_gorp_cube_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/consolidated_gorp_cube_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Gorpeen",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "area_effect_cloud_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/area_effect_cloud_2.json",
+          "src/main/java/net/mcreator/gorp/item/GorpeenItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpeenItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpeen_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpeenItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpinominalTaste",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpinominal_taste",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/gorpinominal_taste.json"
+        ]
+      }
+    },
+    {
+      "name": "EchoedGorp",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echoed_gorp",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GorpPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpInspirationEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_inspiration_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpInspirationEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpInspirationEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_inspiration_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpInspirationEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpInspiration",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_inspiration",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/potion/GorpInspirationMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "RoastedGorpSeedPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roasted_gorp_seed_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/RoastedGorpSeedPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RoastedGorpSeed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roasted_gorp_seed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/RoastedGorpSeedItem.java",
+          "src/main/resources/assets/gorp/models/item/roasted_gorp_seed.json"
+        ]
+      }
+    },
+    {
+      "name": "RoastedGorpSeedRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roasted_gorp_seed_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/roasted_gorp_seed_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BittenGorpPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bitten_gorp_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/BittenGorpPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gorpivore",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpivore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/gorpivore.json"
+        ]
+      }
+    },
+    {
+      "name": "Flinging",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorp_draft",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/enchantment/FlingingEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpBuddyRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_buddy_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpBuddyRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpBuddy",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_buddy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/client/renderer/GorpBuddyRenderer.java",
+          "src/main/java/net/mcreator/gorp/entity/GorpBuddyEntity.java",
+          "src/main/resources/data/gorp/forge/biome_modifier/gorp_buddy_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpCountProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_count_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpCountProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpCount",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_count",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/command/GorpCountCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "NetherGorpSprout",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_gorp_sprout",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/worldgen/configured_feature/nether_gorp_sprout.json",
+          "src/main/resources/data/gorp/loot_tables/blocks/nether_gorp_sprout.json",
+          "src/main/resources/assets/gorp/models/block/nether_gorp_sprout.json",
+          "src/main/java/net/mcreator/gorp/block/NetherGorpSproutBlock.java",
+          "src/main/resources/data/gorp/forge/biome_modifier/nether_gorp_sprout_biome_modifier.json",
+          "src/main/resources/data/gorp/worldgen/placed_feature/nether_gorp_sprout.json",
+          "src/main/resources/assets/gorp/blockstates/nether_gorp_sprout.json",
+          "src/main/resources/assets/gorp/models/item/nether_gorp_sprout.json"
+        ]
+      }
+    },
+    {
+      "name": "OnFire",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/potion/OnFireMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "OnFireEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_fire_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/OnFireEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnFireEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_fire_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/OnFireEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "OnFireOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_fire_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/OnFireOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpicyGorpPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spicy_gorp_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/SpicyGorpPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpicyGorp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spicy_gorp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/spicy_gorp.json",
+          "src/main/java/net/mcreator/gorp/item/SpicyGorpItem.java"
+        ]
+      }
+    },
+    {
+      "name": "IcyGorpPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icy_gorp_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/IcyGorpPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IcyGorp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icy_gorp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/IcyGorpItem.java",
+          "src/main/resources/assets/gorp/models/item/icy_gorp.json"
+        ]
+      }
+    },
+    {
+      "name": "DiceyGorpRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dicey_gorp_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/DiceyGorpRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DiceyGorp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dicey_gorp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/DiceyGorpItem.java",
+          "src/main/resources/assets/gorp/models/item/dicey_gorp.json"
+        ]
+      }
+    },
+    {
+      "name": "DiceyGorpRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dicey_gorp_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/dicey_gorp_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "IcyGorpSprout",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icy_gorp_sprout",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/block/icy_gorp_sprout.json",
+          "src/main/resources/data/gorp/worldgen/placed_feature/icy_gorp_sprout.json",
+          "src/main/resources/assets/gorp/models/item/icy_gorp_sprout.json",
+          "src/main/resources/data/gorp/loot_tables/blocks/icy_gorp_sprout.json",
+          "src/main/resources/assets/gorp/blockstates/icy_gorp_sprout.json",
+          "src/main/java/net/mcreator/gorp/block/IcyGorpSproutBlock.java",
+          "src/main/resources/data/gorp/forge/biome_modifier/icy_gorp_sprout_biome_modifier.json",
+          "src/main/resources/data/gorp/worldgen/configured_feature/icy_gorp_sprout.json"
+        ]
+      }
+    },
+    {
+      "name": "Frozen",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/potion/FrozenMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "FrozenEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/FrozenEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FrozenOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/FrozenOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FrozenEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/FrozenEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarFullSPicy",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_full_s_picy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/blockstates/gorp_altar_full_s_picy.json",
+          "src/main/resources/assets/gorp/models/item/gorp_altar_full_s_picy.json",
+          "src/main/java/net/mcreator/gorp/block/GorpAltarFullSPicyBlock.java",
+          "src/main/resources/assets/gorp/models/block/gorp_altar_full_s_picy.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarFullIcy",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_full_icy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/blockstates/gorp_altar_full_icy.json",
+          "src/main/resources/assets/gorp/models/item/gorp_altar_full_icy.json",
+          "src/main/resources/assets/gorp/models/block/gorp_altar_full_icy.json",
+          "src/main/java/net/mcreator/gorp/block/GorpAltarFullIcyBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarTypeSelector",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_type_selector",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpAltarTypeSelectorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarMoltenSelector",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_molten_selector",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpAltarMoltenSelectorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarIcySelector",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_icy_selector",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpAltarIcySelectorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FasterThanGorp",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faster_than_gorp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/faster_than_gorp.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarIcyLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_icy_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/loot_tables/blocks/gorp_altar_full_icy.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpAltarFullSpicyLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_altar_full_spicy_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/loot_tables/blocks/gorp_altar_full_spicy.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpophoneButtonClickProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpophone_button_click_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpophoneButtonClickProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gorpophone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpophone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/inventory/GorpophoneInventoryCapability.java",
+          "src/main/resources/assets/gorp/models/item/gorpophone.json",
+          "src/main/java/net/mcreator/gorp/item/GorpophoneItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpophoneRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpophone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorpophone_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RoastedGorpSeedCampfire",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roasted_gorp_seed_campfire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/roasted_gorp_seed_campfire.json"
+        ]
+      }
+    },
+    {
+      "name": "ConsolidatedGorpCubeRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "consolidated_gorp_cube_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/ConsolidatedGorpCubeRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/FlightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpShirtBootsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_shirt_boots_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpShirtBootsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Murdler",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "murdler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/MurdlerItem.java",
+          "src/main/resources/assets/gorp/models/item/murdler.json"
+        ]
+      }
+    },
+    {
+      "name": "MurdlerLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "murdler_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/MurdlerLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpRadioDisc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_radio_disc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/GorpRadioDiscItem.java",
+          "src/main/resources/assets/gorp/models/item/gorp_radio_disc.json"
+        ]
+      }
+    },
+    {
+      "name": "DangerousEnvironmentsDisc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dangerous_environments_disc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/dangerous_environments_disc.json",
+          "src/main/java/net/mcreator/gorp/item/DangerousEnvironmentsDiscItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/gorp_coin.json",
+          "src/main/java/net/mcreator/gorp/item/GorpCoinItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpophoneScreen",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpophone_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/network/GorpophoneScreenButtonMessage.java",
+          "src/main/java/net/mcreator/gorp/world/inventory/GorpophoneScreenMenu.java",
+          "src/main/java/net/mcreator/gorp/network/GorpophoneScreenSlotMessage.java",
+          "src/main/java/net/mcreator/gorp/client/gui/GorpophoneScreenScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpCoinOnKill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_coin_on_kill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpCoinOnKillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeIsGorp",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "he_is_gorp",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "DiceyGorpUpgradeSmithingTemplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dicey_gorp_upgrade_smithing_template",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/DiceyGorpUpgradeSmithingTemplateItem.java",
+          "src/main/resources/assets/gorp/models/item/dicey_gorp_upgrade_smithing_template.json"
+        ]
+      }
+    },
+    {
+      "name": "DiceyGorpUpgradeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dicey_gorp_upgrade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/dicey_gorp_upgrade_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "UpgradedDiceyGorp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgraded_dicey_gorp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/upgraded_dicey_gorp.json",
+          "src/main/java/net/mcreator/gorp/item/UpgradedDiceyGorpItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DiceyGorpDoubleUpgrade",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dicey_gorp_double_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/dicey_gorp_double_upgrade.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpCoinOnAdvancement",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_coin_on_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/functions/gorp_coin_on_advancement.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "CoinOnAdvancementAfter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_on_advancement_after",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/CoinOnAdvancementAfterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpSpearFling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_spear_fling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpSpearFlingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpSpearRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_spear_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpSpearRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RoastedGorpSeedFurnaceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roasted_gorp_seed_furnace_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/roasted_gorp_seed_furnace_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpSuds",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_suds",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/particles/gorp_suds.json",
+          "src/main/java/net/mcreator/gorp/client/particle/GorpSudsParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "SpiritMeadow",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirit_meadow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/worldgen/placed_feature/spirit_meadow_tree.json",
+          "src/main/java/net/mcreator/gorp/world/features/treedecorators/SpiritMeadowFruitDecorator.java",
+          "src/main/resources/data/gorp/worldgen/biome/spirit_meadow.json",
+          "src/main/resources/data/gorp/worldgen/configured_feature/spirit_meadow_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "AStepIntoTheGorp",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_step_into_the_gorp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/a_step_into_the_gorp.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpsWorldPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorps_world_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpsWorldPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpsWorldPlayerLeavesDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorps_world_player_leaves_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpsWorldPlayerLeavesDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpsWorld",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorps_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/dimension_type/gorps_world.json",
+          "src/main/java/net/mcreator/gorp/world/dimension/GorpsWorldDimension.java",
+          "src/main/resources/data/gorp/dimension/gorps_world.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpRiftBioconduit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_rift_bioconduit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/gorp_rift_bioconduit.json",
+          "src/main/java/net/mcreator/gorp/item/GorpRiftBioconduitItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SpentGorpRiftBiocontuit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spent_gorp_rift_biocontuit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/SpentGorpRiftBiocontuitItem.java",
+          "src/main/resources/assets/gorp/models/item/spent_gorp_rift_biocontuit.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpRiftBioconduitPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_rift_bioconduit_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpRiftBioconduitPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpositeBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorposite_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpositeBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gorposite",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gorposite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/blockstates/gorposite.json",
+          "src/main/resources/data/gorp/loot_tables/blocks/gorposite.json",
+          "src/main/resources/assets/gorp/models/block/gorposite.json",
+          "src/main/java/net/mcreator/gorp/block/GorpositeBlock.java",
+          "src/main/resources/assets/gorp/models/item/gorposite.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpoliteBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpolite_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpoliteBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gorpolite",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gorpolite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/block/GorpoliteBlock.java",
+          "src/main/resources/assets/gorp/blockstates/gorpolite.json",
+          "src/main/resources/assets/gorp/models/item/gorpolite.json",
+          "src/main/resources/data/gorp/loot_tables/blocks/gorpolite.json",
+          "src/main/resources/assets/gorp/models/block/gorpolite.json"
+        ]
+      }
+    },
+    {
+      "name": "GorplingJumpPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpling_jump_playback_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorplingJumpPlaybackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gorpling",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/entity/GorplingEntity.java",
+          "src/main/resources/data/gorp/forge/biome_modifier/gorpling_biome_modifier.json",
+          "src/main/resources/assets/gorp/models/item/gorpling_spawn_egg.json",
+          "src/main/java/net/mcreator/gorp/client/renderer/GorplingRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "GorplingIdlePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpling_idle_playback_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorplingIdlePlaybackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorplingWalkPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpling_walk_playback_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorplingWalkPlaybackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpBuddyWalkPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_buddy_walk_playback_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpBuddyWalkPlaybackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpSporesFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_spores_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/forge/biome_modifier/gorp_spores_feature_biome_modifier.json",
+          "src/main/resources/data/gorp/worldgen/placed_feature/gorp_spores_feature.json",
+          "src/main/resources/data/gorp/worldgen/configured_feature/gorp_spores_feature.json"
+        ]
+      }
+    },
+    {
+      "name": "ManAboveGorpBelow",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "man_above_gorp_below",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GorplingRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpling_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorplingRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BloodPumpEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_pump_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/BloodPumpEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BloodPumpEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_pump_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/BloodPumpEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BloodPump",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_pump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/potion/BloodPumpMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "JorpFooted",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorp_footed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/potion/JorpFootedMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "JorpFootedOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorp_footed_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/JorpFootedOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Gorpium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/GorpiumItem.java",
+          "src/main/resources/assets/gorp/models/item/gorpium.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpiumOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpium_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/block/GorpiumOreBlock.java",
+          "src/main/resources/data/gorp/forge/biome_modifier/gorpium_ore_biome_modifier.json",
+          "src/main/resources/data/gorp/worldgen/placed_feature/gorpium_ore.json",
+          "src/main/resources/data/gorp/worldgen/configured_feature/gorpium_ore.json",
+          "src/main/resources/assets/gorp/models/item/gorpium_ore.json",
+          "src/main/resources/assets/gorp/models/block/gorpium_ore.json",
+          "src/main/resources/assets/gorp/blockstates/gorpium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "BloodPumpEffectDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_pump_effect_display_overlay_ingame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/BloodPumpEffectDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BloodPumpEffect",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blood_pump_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/client/screens/BloodPumpEffectOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodPumpInCombatReturn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_pump_in_combat_return",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/BloodPumpInCombatReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UnstableGorpiumBar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unstable_gorpium_bar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/unstable_gorpium_bar.json",
+          "src/main/java/net/mcreator/gorp/item/UnstableGorpiumBarItem.java"
+        ]
+      }
+    },
+    {
+      "name": "UnstableGorpiumBarRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unstable_gorpium_bar_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/unstable_gorpium_bar_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StableGorpiumBar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stable_gorpium_bar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/stable_gorpium_bar.json",
+          "src/main/java/net/mcreator/gorp/item/StableGorpiumBarItem.java"
+        ]
+      }
+    },
+    {
+      "name": "StableGorpiumBarRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stable_gorpium_bar_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/stable_gorpium_bar_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpiumOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpium_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/loot_tables/blocks/gorpium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "HasBittenGorp",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_bitten_gorp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/has_bitten_gorp.json"
+        ]
+      }
+    },
+    {
+      "name": "HasCraftedGorpFabric",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_crafted_gorp_fabric",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/advancements/has_crafted_gorp_fabric.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpasolRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpasol_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpasolRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gorpasol",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpasol",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/gorpasol.json",
+          "src/main/java/net/mcreator/gorp/item/GorpasolItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpasolOnPlayerStoppedUsing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpasol_on_player_stopped_using",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpasolOnPlayerStoppedUsingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JorpFootedEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorp_footed_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/JorpFootedEffectExpiresProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "GorpSpearEntitySwingsItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_spear_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpSpearEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JorpStart",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jorp_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/enchantment/JorpStartEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "HostileBreadJamDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bread_jam_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/HostileBreadJamDisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostileBread",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bread",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/hostile_bread_spawn_egg.json",
+          "src/main/java/net/mcreator/gorp/client/renderer/HostileBreadRenderer.java",
+          "src/main/java/net/mcreator/gorp/entity/HostileBreadEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpophoneCostButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpophone_cost_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpophoneCostButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpCoinProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_coin_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/entity/GorpCoinProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Glingshot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glingshot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/GlingshotItem.java",
+          "src/main/resources/assets/gorp/models/item/glingshot.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpCoinProjectileProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_coin_projectile_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpCoinProjectileProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostileBreadRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bread_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/HostileBreadRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostileBreadPBDisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bread_pb_display_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/HostileBreadPBDisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic"
+      }
+    },
+    {
+      "name": "DisableGorpCoinDrops",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_gorp_coin_drops",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "DisableGorpCoinOnAdvancement",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_gorp_coin_on_advancement",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "GorpCoinProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_coin_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpCoinProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostileBreadPlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bread_playback_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/HostileBreadPlaybackConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DisableGlingshotTrade",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_glingshot_trade",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "BreedPBJ",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breed_pbj",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/BreedPBJProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic"
+      }
+    },
+    {
+      "name": "GorpNewWorldRecord",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_new_world_disc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/item/GorpNewWorldRecordItem.java",
+          "src/main/resources/assets/gorp/models/item/gorp_new_world_disc.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpRiftBioconduitSmithingTemplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_rift_bioconduit_smithing_template",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/gorp_rift_bioconduit_smithing_template.json",
+          "src/main/java/net/mcreator/gorp/item/GorpRiftBioconduitSmithingTemplateItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpRiftBioconduitSmithingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_rift_bioconduit_smithing_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_rift_bioconduit_smithing_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RefinedGorpium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refined_gorpium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/refined_gorpium.json",
+          "src/main/java/net/mcreator/gorp/item/RefinedGorpiumItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GorpRiftBioconduitSmithingTemplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_rift_bioconduit_smithing_template_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/gorp_rift_bioconduit_smithing_template_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PBJBreed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pbj_breed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/PBJBreedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlingshotItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glingshot_item_in_inventory_tick",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GlingshotItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostileBreadOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bread_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/HostileBreadOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostileBreadPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bread_player_collides_with_this_entity",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/HostileBreadPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlingshotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glingshot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gorp/recipes/glingshot.json"
+        ]
+      }
+    },
+    {
+      "name": "SuspiciousBreadRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suspicious_bread_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/SuspiciousBreadRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuspiciousBread",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suspicious_bread",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/suspicious_bread.json",
+          "src/main/java/net/mcreator/gorp/item/SuspiciousBreadItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GlooeBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glooe_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/block/GlooeBlockBlock.java",
+          "src/main/resources/assets/gorp/blockstates/glooe_block.json",
+          "src/main/resources/data/gorp/loot_tables/blocks/glooe_block.json",
+          "src/main/resources/assets/gorp/models/item/glooe_block.json",
+          "src/main/resources/assets/gorp/models/block/glooe_block.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpophoneScreenValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpophone_screen_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpophoneScreenValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GorpophoneRequirementTooltipDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorpophone_requirement_tooltip_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpophoneRequirementTooltipDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlooeSicknessOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glooe_sickness_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GlooeSicknessOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlooeSickness",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glooe_sickness",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/potion/GlooeSicknessMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "GlooePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glooe_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GlooePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Glooe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glooe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gorp/models/item/glooe.json",
+          "src/main/java/net/mcreator/gorp/item/GlooeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SuspiciousBreadLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suspicious_bread_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_tables/chests/simple_dungeon.json"
+        ]
+      }
+    },
+    {
+      "name": "GorpOnDroppedItemEntityDestroyed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gorp_on_dropped_item_entity_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/gorp/procedures/GorpOnDroppedItemEntityDestroyedProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "gorp_count",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "bitten_gorp_count",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "gorp_talk",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "let_jorp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "double_jorp_active",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "gorp_bloodpump",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "150.0"
+    },
+    {
+      "name": "gorphel_defeated",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "BloodPumpOverlayFade",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "OutOfCombatCooldown",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "anon_cookie",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "gorpophone_slot_count",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "gorp_generator_prompt",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "gorp_generator_player_pressed",
+      "type": "string",
+      "scope": "global",
+      "value": "\"\""
+    },
+    {
+      "name": "generator_inv_slot",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "gorpophone_tooltip_text",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "gulp",
+      "files": [
+        "gulp"
+      ],
+      "category": "player",
+      "subtitle": "Gulping"
+    },
+    {
+      "name": "belch",
+      "files": [
+        "belch"
+      ],
+      "category": "player",
+      "subtitle": "Belch"
+    },
+    {
+      "name": "chomp",
+      "files": [
+        "chomp"
+      ],
+      "category": "neutral",
+      "subtitle": "Gorp chomps"
+    },
+    {
+      "name": "gorp_radio",
+      "files": [
+        "gorp_radio"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "gorp_radio_dangerous_environments",
+      "files": [
+        "gorp_radio_dangerous_environments"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "gorp_ambience",
+      "files": [
+        "gorp_ambience_0",
+        "gorp_ambience_1",
+        "gorp_ambience_2",
+        "gorp_ambience_3"
+      ],
+      "category": "ambient",
+      "subtitle": "Eerie noise"
+    },
+    {
+      "name": "gorp_summon",
+      "files": [
+        "gorp_summon"
+      ],
+      "category": "neutral",
+      "subtitle": "Gorp appears"
+    },
+    {
+      "name": "bloodpump_heartbeat",
+      "files": [
+        "bloodpump_heartbeat_0",
+        "bloodpump_heartbeat_1",
+        "bloodpump_heartbeat_2"
+      ],
+      "category": "player",
+      "subtitle": "Gorp Bloodpump activates"
+    },
+    {
+      "name": "gorp_radio_new_world",
+      "files": [
+        "gorp_radio_new_world"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "gorp_burn",
+      "files": [
+        "gorp_burn"
+      ],
+      "category": "voice",
+      "subtitle": "Gorp burns"
+    },
+    {
+      "name": "fling_0",
+      "files": [
+        "fling_0"
+      ],
+      "category": "neutral",
+      "subtitle": "Gorp Spear swooshes"
+    },
+    {
+      "name": "fling_1",
+      "files": [
+        "fling_1"
+      ],
+      "category": "neutral",
+      "subtitle": "Gorp Spear swooshes"
+    },
+    {
+      "name": "fling_2",
+      "files": [
+        "fling_2"
+      ],
+      "category": "neutral",
+      "subtitle": "Gorp Spear swooshes"
+    },
+    {
+      "name": "fling_3",
+      "files": [
+        "fling_3"
+      ],
+      "category": "neutral",
+      "subtitle": "Gorp Spear swooshes"
+    },
+    {
+      "name": "jorp_hit",
+      "files": [
+        "jorp_hit"
+      ],
+      "category": "neutral",
+      "subtitle": "Jorp attack"
+    },
+    {
+      "name": "gorpling_death",
+      "files": [
+        "jorp_hit_crit"
+      ],
+      "category": "neutral",
+      "subtitle": "Gorpling dies"
+    },
+    {
+      "name": "gorpling_hurt",
+      "files": [
+        "gorpling_hurt"
+      ],
+      "category": "neutral",
+      "subtitle": "Gorpling hurts"
+    },
+    {
+      "name": "pop",
+      "files": [
+        "chat_pop"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "toast_crunch",
+      "files": [
+        "toast_crunch"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "murdler_kill",
+      "files": [
+        "murdler_kill"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:SpiritMeadow"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:GorpiumOre"
+    ],
+    "BIOMES:minecraft:has_structure/igloo": [
+      "~CUSTOM:SpiritMeadow"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:SpiritMeadow"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:GorpStaff"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:GorpNewWorldRecord",
+      "~CUSTOM:DangerousEnvironmentsDisc",
+      "~CUSTOM:GorpRadioDisc"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:Gorposite",
+      "~CUSTOM:Gorpolite"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:SpiritMeadow"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:GorpAltarFullIcy",
+      "~CUSTOM:GorpAltarFullSPicy",
+      "~CUSTOM:GorpAltarFull",
+      "~CUSTOM:GorpAltar"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:GorpiumOre"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck": [
+      "~CUSTOM:SpiritMeadow"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Murdler",
+      "~CUSTOM:GorpHammer"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "key.category.movement": "Gorp\u0027s World",
+      "item.gorp.murdler": "The Murdler",
+      "gui.gorp.gorp_altar_ui_full.label_this_altar_lacks_a_gorp_at_its_m": "This altar lacks a Gorp.",
+      "item.gorp.gorp_radio_disc_de.desc": "Gorp Radio FM - Dangerous Enviroments",
+      "item.gorp.gorp_radio_disc_phlab.desc": "Gorp Radio FM - Phlab",
+      "enchantment.gorp.jorp_draft": "Jorp Draft",
+      "advancements.has_crafted_gorp_fabric.descr": "Player crafted Gorp Fabric for the first time",
+      "gui.gorp.gorp_altar_ui_full.label_find_a_gorp_and_place_him_on_an": "Find one and place him",
+      "gui.gorp.gorpophone_screen.tooltip_requires_1x_gorp_coin": "Requires (1x) Gorp Coin",
+      "item.gorp.gorp_merch_helmet.description_1": "§9§oSet bonus: Gorp makes your heart beat faster",
+      "item.gorp.gorp_merch_helmet.description_0": "§7Alleviates common flu symptoms",
+      "item.gorp.gorp_fabric": "High Quality Gorp Fabric",
+      "item.gorp.stable_gorpium_bar": "Stable Gorpium Bar",
+      "painting.gorp.gorbet.title": "Gorbet",
+      "effect.gorp.gorp_inspiration": "Gorp Inspiration",
+      "item.gorp.gorpasol": "Gorpasol",
+      "subtitles.fling": "Gorp Spear swooshes",
+      "advancements.gorp_speaks.descr": "Place a Gorp onto an altar",
+      "painting.gorp.echoed_gorp.author": "Gorp\u0027s World Dev",
+      "entity.gorp.hostile_bread": "Hostile Bread",
+      "gui.gorp.gorp_altar_ui_full.label_the_altar_allows_you_to_speak_wi": "This altar allows you to speak",
+      "block.gorp.gorp_plant_stage_3": "Gorp Plant",
+      "advancements.altar_be_thy_gorp.title": "Altar Be Thy Gorp",
+      "gamerule.disableGorpCoinDrops": "Disable Gorp Coins",
+      "item.gorp.consolidated_gorp_cube": "Consolidated Gorp Cube",
+      "item.gorp.icy_gorp": "Icy Gorp",
+      "block.gorp.gorp_plant_stage_1": "Gorp Plant",
+      "block.gorp.gorp_plant_stage_2": "Gorp Plant",
+      "subtitles.gorp_radio_dangerous_environments": "",
+      "advancements.ready_set_gorp.title": "Gorp\u0027s World",
+      "effect.gorp.on_fire": "On Fire!",
+      "subtitles.fling_2": "Gorp Spear swooshes",
+      "subtitles.fling_3": "Gorp Spear swooshes",
+      "subtitles.fling_0": "Gorp Spear swooshes",
+      "subtitles.fling_1": "Gorp Spear swooshes",
+      "gui.gorp.gorp_altar_ui_full.label_on_an_altar": "on the altar.",
+      "item.gorp.roasted_gorp_seed": "Roasted Gorp Seed",
+      "block.gorp.gorp_sprout": "Gorp Sprout",
+      "enchantment.gorp.plurge": "Plurge",
+      "biome.gorp.spirit_meadow": "Spirit Meadow",
+      "block.gorp.nether_gorp_sprout": "Nether Gorp Sprout",
+      "item.gorp.refined_gorpium": "Refined Gorpium",
+      "item.gorp.jorp_juice.description_0": "§7It tastes a little jorpy...",
+      "painting.gorp.he_is_gorp.title": "He Is Gorp",
+      "sdrp.gorpsworld": "Gorp\u0027s World",
+      "effect.gorp.frozen": "Frozen!",
+      "text.gorp.tip.spearjorp": "A Gorp Spear enchanted with Jorp Draft is the ultimate traversal method.",
+      "gui.gorp.gorp_altar_ui_full.label_ground": "the environment.",
+      "gamerule.disableGlingshotTrade.description": "Glingshots will not replace the target\u0027s main-hand with a Gorp Coin",
+      "block.gorp.gorp_altar_full_icy": "Gorp Altar",
+      "painting.gorp.echoed_gorp.title": "Echoed Gorp",
+      "item.gorp.gorp_staff.description_0": "§7Swing to scare away mobs",
+      "block.gorp.gorposite": "Gorposite",
+      "enchantment.gorp.jorp": "Jorp",
+      "painting.gorp.man_above_gorp_below.author": "Gorp\u0027s World Dev",
+      "block.gorp.gorpolite": "Gorpolite",
+      "item.gorp.dangerous_environments_disc": "Music Disc",
+      "advancements.gorpcess_denied.title": "Gorpcess Denied",
+      "gamerule.disableGorpCoinOnAdvancement.description": "Prevent advancements rewarding Gorp Coins",
+      "advancements.gorpcess_denied.descr": "Try to bite a Gorp without consent",
+      "painting.gorp.gorbet.author": "Kristoffer Zetterstrand \u0026 Gorp\u0027s World Dev",
+      "item.gorp.gorp_spear": "Gorp Spear",
+      "item.gorp.dicey_gorp_upgrade_smithing_template": "[MVP+] Gorp Upgrade",
+      "item.gorp.gorpling_spawn_egg": "Gorpling Spawn Egg",
+      "block.gorp.gorp_altar_full": "Gorp Altar",
+      "advancements.a_step_into_the_gorp.title": "A Step Into the Gorp",
+      "item.gorp.gorp_coin": "§aGorp Coin",
+      "item.gorp.dicey_gorp": "Dicey Gorp",
+      "item.gorp.gorp_merch_leggings.description_1": "§9§oSet bonus: Gorp makes your heart beat faster",
+      "item.gorp.gorp_merch_leggings.description_0": "§7Gives the player a jump boost",
+      "item.gorp.gorp": "Gorp",
+      "effect.gorp.jorping": "Jorping",
+      "item.gorp.gorp_staff": "Gorp Staff",
+      "gamerule.disableGorpCoinOnAdvancement": "Disable Gorp Coin on Advancement",
+      "item.gorp.suspicious_bread": "Suspicious Bread",
+      "advancements.permission_gorped.title": "Permission Gorped",
+      "painting.gorp.march_of_the_gorp.title": "March Of The Gorp",
+      "item.gorp.gorp_merch_boots": "Impact Dampening Gorp Footwear",
+      "enchantment.gorp.jorp_draft.desc": "Energizes select Gorp items with increased Jorp force",
+      "gamerule.disableGlingshotTrade": "Disable Glingshot Trade",
+      "block.gorp.gorp_altar": "Gorp Altar",
+      "gui.gorp.gorp_altar_ui_full.label_with_gorp": "with a Gorp by translating the",
+      "item.gorp.gorp_seed": "Gorp Seed",
+      "subtitles.bloodpump_heartbeat": "Gorp Bloodpump activates",
+      "item.gorp.area_effect_cloud_2": "Gorpeen",
+      "item.gorp.gorp_merch_boots.description_0": "§7Grants the ability to soften falls from great heights",
+      "item.gorp.gorp_merch_boots.description_1": "§9§oSet bonus: Gorp makes your heart beat faster",
+      "subtitles.gorp_radio_gorp_new_world": "",
+      "block.gorp.glooe_block": "Glooe Block",
+      "gui.gorp.gorpophone_screen.label_gorpophone": "Gorpophone",
+      "block.gorp.gorp_seed": "Gorp Seed",
+      "enchantment.gorp.jorp.desc": "Makes you jorp.",
+      "advancements.gorps_biggest_fan.descr": "Obtain the Gorp merchandise set",
+      "key.gorp.jorpkey": "Jorp Ability",
+      "item.gorp.gorp_radio_disc": "Music Disc",
+      "gui.gorp.gorpophone_screen.tooltip_make_anonymous": "Make anonymous",
+      "item.gorp.gorp_new_world_disc.desc": "Gorp Radio FM - New World",
+      "subtitles.gorp_radio": "",
+      "subtitles.belch": "Belch",
+      "painting.gorp.g_mystery.author": "Gorp\u0027s World Dev",
+      "gui.gorp.gorp_altar_ui_full.label_channeled_energy_from_the_ground": "channeled energy from within",
+      "text.gorp.tip.elementals": "Elemental Gorps give a unique effect when you eat them.",
+      "item.gorp.dangerous_environments_disc.desc": "Gorp Radio FM - Dangerous Enviroments",
+      "advancements.gorp_speaks.title": "Gorp Speaks",
+      "item.gorp.spicy_gorp": "Spicy Gorp",
+      "enchantment.gorp.plurge.desc": "On kill, gain Iron-H Damage.",
+      "subtitles.chomp": "Gorp chomps",
+      "advancements.altar_be_thy_gorp.descr": "Place your first Gorp Altar",
+      "advancements.has_crafted_gorp_fabric.title": "Has Crafted Gorp Fabric",
+      "painting.gorp.gorp_night_out.author": "Gorp\u0027s World Dev",
+      "item.gorp.gorpium": "Gorpium",
+      "item.gorp.gorp_radio_disc.desc": "Gorp Radio FM - Phlab",
+      "enchantment.gorp.iron_h_damage.desc": "Imbues you with Strength and Resistance.",
+      "gamerule.disableGorpCoinDrops.description": "Disallows Gorp Coins to drop on every mob vanquished",
+      "item.gorp.gorp_rift_bioconduit": "Gorp Rift Bioconduit",
+      "item.gorp.gorp_radio_disc_de": "Music Disc",
+      "item.gorp.bitten_gorp": "Bitten Gorp",
+      "item.gorp.gorp_merch_helmet": "Gorp Respirator",
+      "item.gorp.spent_gorp_rift_biocontuit": "Spent Gorp Rift Biocontuit",
+      "effect.gorp.jorp_footed": "Jorp-footed",
+      "block.gorp.gorp_altar_full_s_picy": "Gorp Altar",
+      "advancements.faster_than_gorp.descr": "Acquire Gorp\u0027s permission before having a Mythical Gorpiphany",
+      "advancements.gorpinominal_taste.descr": "Let Gorp share his favorite song with you",
+      "item.gorp.gorp_spear.description_0": "§7Hold right-click and release to be sent flying",
+      "item.gorp.gorp_spear.description_1": "§7in whichever direction you\u0027re looking.",
+      "advancements.mythical_gorpiphany.title": "Mythical Gorpiphany",
+      "item.gorp.glingshot": "Glingshot",
+      "item.gorp.gorpophone": "Gorpophone",
+      "subtitles.gulp": "Gulping",
+      "advancements.gorps_biggest_fan.title": "Gorp\u0027s Biggest Fan",
+      "advancements.gorpivore.title": "Gorpivore",
+      "item.gorp.upgraded_dicey_gorp": "Upgraded Dicey Gorp",
+      "item.gorp.gorp_hammer": "Gorp Hammer",
+      "item.gorp.gorp_merch_leggings": "Gorp Pajamas",
+      "painting.gorp.march_of_the_gorp.author": "Gorp\u0027s World Dev",
+      "advancements.gorpivore.descr": "Eat 100 entire Gorps",
+      "block.gorp.icy_gorp_sprout": "Icy Gorp Sprout",
+      "item.gorp.gorp_hammer.description_0": "§7On hit, inflict Jorp on you and your target",
+      "enchantment.gorp.iron_h_damage": "You gain strength and durability",
+      "item.gorp.murdler.description_0": "I LOVE MURDLING MOBES",
+      "advancements.mythical_gorpiphany.descr": "Find a clue to the secrets of Gorp in a dream",
+      "entity.gorp.gorpling": "Gorpling",
+      "item.gorp.unstable_gorpium_bar": "Unstable Gorpium Bar",
+      "item.gorp.gorp_merch_chestplate.description_1": "§9§oSet bonus: Gorp makes your heart beat faster",
+      "item.gorp.hostile_bread_spawn_egg": "Hostile Bread Spawn Egg",
+      "item.gorp.gorp_merch_chestplate.description_0": "§7Allows the wearer to perform a Double Jorp",
+      "gui.gorp.gorpophone_screen.anon_gorpcast": "",
+      "item.gorp.gorp_radio_disc_phlab": "Music Disc",
+      "block.gorp.gorpium_ore": "Gorpium Ore",
+      "item.gorp.gorp_new_world_disc": "Music Disc",
+      "subtitles.gorp_summon": "Gorp appears",
+      "advancements.has_bitten_gorp.title": "Has Bitten Gorp",
+      "text.gorp.tip.altar": "Gorp likes talking about certain topics. If you bring up the right thing, he might give you a surprise!",
+      "advancements.permission_gorped.descr": "Attain the privileges necessary to bite a Gorp",
+      "gui.gorp.gorpophone_screen.gorpcastmsg": "Send a Gorpcast",
+      "gui.gorp.gorp_altar_ui_full.GorpMessage": "Say something to Gorp...",
+      "gui.gorp.gorp_altar_ui_full.label_gorp": "Gorp Altar",
+      "item.gorp.jorp_juice": "Jorp Juice",
+      "advancements.a_step_into_the_gorp.descr": "Enter Gorp\u0027s World for the first time",
+      "painting.gorp.g_mystery.title": "G Mystery",
+      "text.gorp.tip.gorpslove": "Gorps are attracted to Jorp Juice. It\u0027s their favorite!",
+      "item.gorp.gorp_merch_chestplate": "I Love Gorp T-Shirt",
+      "effect.gorp.blood_pump": "Gorp Blood Pump",
+      "gui.gorp.gorp_altar_ui_full.label_say_hello_to_gorp": "Try saying \"Hello\" to Gorp!",
+      "item.gorp.gorp_radio_disc.description_1": "§8Gorp\u0027s favorite kind of music",
+      "painting.gorp.gorp_night_out.title": "Gorp\u0027s Night Out",
+      "item.gorp.gorp_radio_disc.description_0": "§8Fun fact: Smooth jazz is",
+      "item.gorp.upgraded_dicey_gorp.description_0": "§7Rolls grant better effects",
+      "subtitles.jorp_hit": "Jorp attack",
+      "sdrp.gorpsworld.in": "In Gorp\u0027s World",
+      "gui.gorp.gorpophone_screen.tooltip_requires_gorp_coin": "Requires Gorp Coin",
+      "advancements.gorpinominal_taste.title": "Gorpinominal Taste",
+      "painting.gorp.man_above_gorp_below.title": "Man Above, Gorp Below",
+      "item.gorp.gorp_rift_bioconduit_smithing_template": "Gorp Rift Bioconduit Smithing Template",
+      "enchantment.gorp.jorp_start": "Jorp Start",
+      "advancements.has_bitten_gorp.descr": " Player has bitten Gorp",
+      "advancements.faster_than_gorp.title": "Faster Than Gorp",
+      "subtitles.gorp_radio_new_world": "",
+      "subtitles.gorp_ambience": "Eerie noise",
+      "item_group.gorp.gorp_creative_tab": "Gorp\u0027s World",
+      "advancements.ready_set_gorp.descr": "Obtain your first Gorp",
+      "effect.gorp.iron_h_damage": "Iron-H Damage",
+      "gui.gorp.gorpophone_screen.tooltip_insert_2x_gorp_coin": "Insert (2x) Gorp Coin",
+      "gui.gorp.gorp_altar_ui_full.label_the_language_of_gorps_to_english": "language of Gorps using latent",
+      "gui.gorp.gorp_altar_ui_full.GorpResponse": "Translations may not be accurate",
+      "entity.gorp.gorp_buddy": "Gorp",
+      "item.gorp.glooe": "Glooe Block",
+      "painting.gorp.he_is_gorp.author": "Gorp\u0027s World Dev",
+      "effect.gorp.glooe_sickness": "Glooe Sickness",
+      "gui.gorp.gorp_altar_ui_full.GorpHello": "Say \u0027Hello\u0027 to Gorp!",
+      "subtitles.jorp_hit_crit": "Critical Jorp attack",
+      "dialogue.glooe.1": "I don\u0027t think I should\u0027ve eaten that glooe.",
+      "dialogue.glooe.2": "I\u0027m pretty sure you\u0027re not supposed to consume glooe.",
+      "dialogue.glooe.6": "What the hell was in that glooe?",
+      "dialogue.glooe.3": "Note to self: Eat less glooe.",
+      "dialogue.glooe.5": "Oouugghhh..... I ate too much glooe...",
+      "dialogue.glooe.4": "That glooe made me queasy.",
+      "dialogue.glooe.0": "This glooe is making my stomach churn.",
+      "dialogue.gorp.0": "Gweb...",
+      "dialogue.gorp.1": "Glubb...",
+      "dialogue.gorp.2": "Gwib...",
+      "dialogue.gorp.3": "Glululu...",
+      "dialogue.gorp.4": "Glup...",
+      "dialogue.icygorp.0": "brrr...",
+      "dialogue.icygorp.1": "chitterchitter...",
+      "dialogue.icygorp.2": "pardon?",
+      "dialogue.icygorp.3": "freezes...",
+      "dialogue.icygorp.4": "huh?",
+      "dialogue.spicygorp.0": "GRRR...",
+      "dialogue.spicygorp.1": "WHO CARES...",
+      "dialogue.spicygorp.2": "DIE!!!",
+      "dialogue.spicygorp.3": "BIG WHOOP...",
+      "dialogue.spicygorp.4": "ARRGGHH!!",
+      "subtitles.gorp_burn": "Gorp burns",
+      "subtitles.gorpling_death": "Gorpling dies",
+      "subtitles.gorpling_hurt": "Gorpling hurts",
+      "subtitles.pop": "",
+      "subtitles.toast_crunch": "",
+      "subtitles.murdler_kill": ""
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/gorp/init/GorpModEnchantments.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModMenus.java",
+      "src/main/java/net/mcreator/gorp/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModScreens.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModGameRules.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModKeyMappings.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModPaintings.java",
+      "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
+      "src/main/java/net/mcreator/gorp/init/GorpModParticleTypes.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModParticles.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModMobEffects.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModBlocks.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModItems.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModEntityRenderers.java",
+      "src/main/java/net/mcreator/gorp/init/GorpModEntities.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/gorp/init/GorpModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/gorp/GorpMod.java",
+      "src/main/java/net/mcreator/gorp/network/GorpModVariables.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/gorp/init/GorpModModels.java",
+      "src/main/resources/assets/gorp/sounds.json",
+      "src/main/java/net/mcreator/gorp/init/GorpModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "gorp",
+    "modName": "Gorp\u0027s World",
+    "version": "0.10.0",
+    "description": "You\u0027re in his world now.",
+    "author": "gorpdev",
+    "websiteURL": "https://gorps.world/",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "gorpsworld2x",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator",
+    "modElementsPackage": "net.mcreator.gorp"
+  },
+  "mcreatorVersion": 202500345720
+}

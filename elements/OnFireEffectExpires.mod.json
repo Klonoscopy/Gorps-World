@@ -1,0 +1,8 @@
+{
+  "_fv": 79,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"44\" y=\"49\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_extinguish\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></next></block><block type=\"entity_set_stepheight\" x=\"54\" y=\"179\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"stepHeight\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"entity_get_stepheight\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">0.6</field></block></value></block></value></block><block type=\"entity_set_attribute_base_value\" x=\"38\" y=\"270\"><field name=\"attribute\">MOVEMENT_SPEED</field><value name=\"value\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"entity_get_attribute_base_value\"><field name=\"attribute\">MOVEMENT_SPEED</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">0.5</field></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

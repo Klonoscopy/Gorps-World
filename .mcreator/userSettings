@@ -1,0 +1,16 @@
+{
+  "workspacePanelIconSize": "LIST",
+  "workspacePanelSortType": "CREATED",
+  "workspacePanelSortAscending": false,
+  "projectBrowserSplitPos": 280,
+  "projectBrowserState": {
+    "expandedPaths": [
+      "[, Gorp\u0027s World]",
+      "[, Gorp\u0027s World, Resources (Gradle)]",
+      "[, Gorp\u0027s World, Resources (Gradle), C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets]",
+      "[, Gorp\u0027s World, Resources (Gradle), C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets, C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets\\gorp]",
+      "[, Gorp\u0027s World, Resources (Gradle), C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets, C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets\\gorp, C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets\\gorp\\textures]",
+      "[, Gorp\u0027s World, Resources (Gradle), C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets, C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets\\gorp, C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets\\gorp\\textures, C:\\Users\\Cituation\\MCreatorWorkspaces\\gorp\\src\\main\\resources\\assets\\gorp\\textures\\screens]"
+    ]
+  }
+}

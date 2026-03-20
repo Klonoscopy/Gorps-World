@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "gorp:block/gorposite"
+      },
+      {
+        "model": "gorp:block/gorposite",
+        "y": 90
+      },
+      {
+        "model": "gorp:block/gorposite",
+        "y": 180
+      },
+      {
+        "model": "gorp:block/gorposite",
+        "y": 270
+      }
+    ]
+  }
+}

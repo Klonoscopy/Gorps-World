@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gorp:block/nether_gorp_sprout"
+  }
+}

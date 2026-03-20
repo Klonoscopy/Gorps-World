@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "group": "gorp",
+  "category": "food",
+  "experience": 3,
+  "cookingtime": 120,
+  "ingredient": {
+    "item": "gorp:bitten_gorp"
+  },
+  "result": "gorp:jorp_juice"
+}

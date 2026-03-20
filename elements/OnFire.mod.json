@@ -1,0 +1,35 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "On Fire!",
+    "icon": "on_fire",
+    "color": {
+      "value": -39424,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "STEP_HEIGHT"
+        },
+        "amount": 0.6,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "onStarted": {
+      "name": "OnFireEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "OnFireEffectExpires"
+    }
+  }
+}

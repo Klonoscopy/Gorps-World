@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "gorp:spirit_meadow",
+  "spawners": {
+    "type": "gorp:gorpling",
+    "weight": 70,
+    "minCount": 18,
+    "maxCount": 25
+  }
+}

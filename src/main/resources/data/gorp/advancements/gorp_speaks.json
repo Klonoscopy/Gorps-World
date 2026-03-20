@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "gorp:gorp_altar_full"
+    },
+    "title": {
+      "translate": "advancements.gorp_speaks.title"
+    },
+    "description": {
+      "translate": "advancements.gorp_speaks.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "gorp_speaks_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "gorp:altar_be_thy_gorp"
+}

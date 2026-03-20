@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab ",
+    "cde",
+    " f "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:hopper"
+    },
+    "b": {
+      "item": "gorp:gorp_coin"
+    },
+    "c": {
+      "tag": "minecraft:buttons"
+    },
+    "d": {
+      "item": "minecraft:note_block"
+    },
+    "e": {
+      "item": "minecraft:iron_ingot"
+    },
+    "f": {
+      "item": "gorp:bitten_gorp"
+    }
+  },
+  "result": {
+    "item": "gorp:gorpophone",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Jorp Ability",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "JorpkeyOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "JorpkeyOnKeyReleased"
+    }
+  }
+}

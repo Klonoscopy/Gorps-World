@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Glooe Sickness",
+    "icon": "glooe_sickness",
+    "color": {
+      "value": -6750055,
+      "falpha": 0.0
+    },
+    "particle": {
+      "value": "DRAGON_BREATH"
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": true,
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "GlooeSicknessOnEffectActiveTick"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 79,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Jorp Draft",
+    "supportedSlots": "any",
+    "weight": 10,
+    "anvilCost": 1,
+    "maxLevel": 4,
+    "damageModifier": 0,
+    "incompatibleEnchantments": [
+      {
+        "value": "CUSTOM:JorpStart"
+      }
+    ],
+    "supportedItems": [
+      {
+        "value": "CUSTOM:GorpSpear"
+      },
+      {
+        "value": "CUSTOM:GorpStaff"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

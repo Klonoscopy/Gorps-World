@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "gorp:block/gorp_altar_full_s_picy"
+    },
+    "facing=east": {
+      "model": "gorp:block/gorp_altar_full_s_picy",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "gorp:block/gorp_altar_full_s_picy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "gorp:block/gorp_altar_full_s_picy",
+      "y": 270
+    }
+  }
+}

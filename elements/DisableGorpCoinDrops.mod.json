@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Disable Gorp Coins",
+    "description": "Disallows Gorp Coins to drop on every mob vanquished",
+    "category": "DROPS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "jonk": {
+    "subtitle": "subtitle.gorp.jonk",
+    "sounds": ["gorp:jonk"]
+  },
+  "critical_jonk": {
+    "subtitle": "subtitle.gorp.critical_jonk",
+    "sounds": ["gorp:critical_jonk"]
+  },
+  "fling_normal": {
+    "subtitle": "subtitle.gorp.fling",
+    "sounds": ["gorp:fling_normal"]
+  },
+  "fling_short": {
+    "subtitle": "subtitle.gorp.fling",
+    "sounds": ["gorp:fling_short"]
+  },
+  "fling_long": {
+    "subtitle": "subtitle.gorp.fling",
+    "sounds": ["gorp:fling_long"]
+  },
+  "belch": {
+    "subtitle": "subtitle.gorp.belch",
+    "sounds": ["gorp:belch"]
+  },
+  "gulp": {
+    "subtitle": "subtitle.gorp.gulp",
+    "sounds": ["gorp:gulp"]
+  }
+}

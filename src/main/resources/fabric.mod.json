@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "gorp",
+	"version": "${version}",
+	"name": "Gorp's World",
+	"description": "A Gorp's world like no other.",
+	"authors": [
+		"gorpdev"
+	],
+	"contact": {
+		"homepage": "https://gorps.world/",
+		"sources": "https://github.com/Klonoscopy/Gorps-World",
+		"issues": "https://github.com/Klonoscopy/Gorps-World/issues"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.gorp.wiki": "https://www.gorps.world/guide/what-is-gorps-world",
+				"modmenu.gorp.special": "https://gorpsworld.linkh.at/fastfood"
+			}
+		}
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/gorp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"world.gorps.gorp.GorpsWorld"
+		],
+		"client": [
+			"world.gorps.gorp.GorpsWorldClient",
+			"world.gorps.gorp.network.ClientNetworking"
+		],
+		"fabric-datagen": [
+			"world.gorps.gorp.datagen.GorpsWorldDataGenerator"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

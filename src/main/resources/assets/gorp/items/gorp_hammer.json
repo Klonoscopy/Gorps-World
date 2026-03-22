@@ -1,0 +1,22 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "gorp:item/gorp_hammer"
+        },
+        "when": [
+          "gui"
+        ]
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "gorp:item/gorp_hammer_in_hand"
+    },
+    "property": "minecraft:display_context"
+  },
+  "swap_animation_scale": 1.0
+}

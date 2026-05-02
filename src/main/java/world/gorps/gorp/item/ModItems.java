@@ -58,7 +58,7 @@ public class ModItems {
                     .component(DataComponents.WEAPON, new Weapon(1))
     );
     public static final Item GORP_STAFF = register(
-            "gorp_staff", GorpStaffItem::new, new Item.Properties().durability(238).component(DataComponents.TOOL, ShearsItem.createToolProperties())
+            "gorp_staff", GorpStaffItem::new, new Item.Properties().durability(238).component(DataComponents.TOOL, GorpStaffItem.createToolProperties())
     );
     public static final Item GORP_RESPIRATOR = register(
             "gorp_respirator", Item::new,

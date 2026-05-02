@@ -1,0 +1,29 @@
+{
+  "swap_animation_scale": 0.7,
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "gorp:item/gorp_spear"
+        },
+        "when": ["gui"]
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "model": "gorp:item/gorp_spear_in_hand",
+      "property": "minecraft:using_item",
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "gorp:item/gorp_spear_while_using"
+      },
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "gorp:item/gorp_spear_in_hand"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "gorp:item/gorp_spear_in_hand",
+  "textures": {
+    "layer0": "gorp:item/gorp_spear_in_hand"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, -90, -220],
+      "translation": [0, -8, 2],
+      "scale": [1.7, 1.7, 0.85]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 90, 220],
+      "translation": [0, -8, 2],
+      "scale": [1.7, 1.7, 0.85]
+    }
+  }
+}

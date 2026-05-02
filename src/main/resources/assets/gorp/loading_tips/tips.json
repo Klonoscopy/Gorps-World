@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "tips": [
+    "text.gorp.tip.elementals",
+    "text.gorp.tip.altar",
+    "text.gorp.tip.spearjorp",
+    "text.gorp.tip.gorpslove"
+  ]
+}

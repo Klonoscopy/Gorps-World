@@ -27,12 +27,20 @@ public class ModItems {
         return item;
     }
     public static Item BITTEN_GORP = register(
-            "bitten_gorp", Item::new, new Item.Properties()
+            "bitten_gorp", BittenGorpItem::new, new Item.Properties()
                     .food(GorpsWorldFoods.BITTEN_GORP, GorpsWorldConsumables.BITTEN_GORP)
-                    .component(DataComponents.CONSUMABLE, defaultFood().consumeSeconds(0.8F).build())
+                    .component(DataComponents.CONSUMABLE, defaultFood()
+                            .consumeSeconds(1.6F)
+                            .build())
     );
     public static final Item GORP = register(
-            "gorp", GorpItem::new, new Item.Properties().food(GorpsWorldFoods.GORP, GorpsWorldConsumables.GORP).usingConvertsTo(BITTEN_GORP).useCooldown(0.5F)
+            "gorp", GorpItem::new, new Item.Properties()
+                    .food(GorpsWorldFoods.GORP, GorpsWorldConsumables.GORP)
+                    .component(DataComponents.CONSUMABLE, defaultFood()
+                            .consumeSeconds(0.52F)
+                            .build())
+                    .usingConvertsTo(BITTEN_GORP)
+                    .useCooldown(0.5F)
     );
     public static final Item JORP_JUICE = register(
             "jorp_juice", JorpJuiceItem::new, new Item.Properties().food(GorpsWorldFoods.JORP_JUICE, GorpsWorldConsumables.JORP_JUICE)
@@ -54,11 +62,15 @@ public class ModItems {
                     .durability(250)
                     .attributes(GorpSpearItem.createAttributes())
                     .component(DataComponents.TOOL, GorpSpearItem.createToolProperties())
-                    .enchantable(1)
+                    .enchantable(15)
                     .component(DataComponents.WEAPON, new Weapon(1))
     );
     public static final Item GORP_STAFF = register(
-            "gorp_staff", GorpStaffItem::new, new Item.Properties().durability(238).component(DataComponents.TOOL, GorpStaffItem.createToolProperties())
+            "gorp_staff", GorpStaffItem::new,
+            new Item.Properties()
+                    .durability(238)
+                    .enchantable(15)
+                    .component(DataComponents.TOOL, GorpStaffItem.createToolProperties())
     );
     public static final Item GORP_RESPIRATOR = register(
             "gorp_respirator", Item::new,

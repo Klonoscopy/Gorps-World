@@ -1,34 +1,25 @@
 package world.gorps.gorp.item;
 
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import world.gorps.gorp.sound.CustomSounds;
+import world.gorps.gorp.util.TickScheduler;
 
-public class GorpItem extends Item {
-    public GorpItem(final Item.Properties properties) {
+public class BittenGorpItem extends Item {
+    public BittenGorpItem(final Properties properties) {
         super(properties);
     }
 
     @Override
-    public InteractionResult use(final Level level, final Player player, final InteractionHand hand) {
-        player.startUsingItem(hand);
-        return InteractionResult.SUCCESS;
-    }
-    @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
         if (!level.isClientSide()) {
             level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), CustomSounds.GULP, entity.getSoundSource(), 1.0F, 1.0F);
+            TickScheduler.queueServerWork(15, () -> level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), CustomSounds.BELCH, entity.getSoundSource(), 1.0F, 1.0F));
         }
 
-        if (entity instanceof Player player) {
-            stack.shrink(1);
-            player.addItem(new ItemStack(ModItems.BITTEN_GORP));
-        }
+        stack.shrink(1);
 
         return stack;
     }

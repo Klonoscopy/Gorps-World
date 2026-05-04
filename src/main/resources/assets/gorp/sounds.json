@@ -26,5 +26,9 @@
   "gulp": {
     "subtitle": "subtitle.gorp.gulp",
     "sounds": ["gorp:gulp"]
+  },
+  "chomp": {
+    "subtitle": "subtitle.gorp.chomp",
+    "sounds": ["gorp:chomp"]
   }
 }

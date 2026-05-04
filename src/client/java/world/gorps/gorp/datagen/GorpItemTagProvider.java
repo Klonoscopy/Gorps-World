@@ -23,6 +23,8 @@ public class GorpItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
     protected void addTags(HolderLookup.Provider wrapperLookup) {
         valueLookupBuilder(JORP_DRAFT_ENCHANTABLE)
                 .add(ModItems.GORP_HAMMER)
+                .add(ModItems.GORP_SPEAR)
+                .add(ModItems.GORP_STAFF)
                 .setReplace(true);
     }
 }

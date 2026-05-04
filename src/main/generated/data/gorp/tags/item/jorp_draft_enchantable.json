@@ -1,6 +1,8 @@
 {
   "replace": true,
   "values": [
-    "gorp:gorp_hammer"
+    "gorp:gorp_hammer",
+    "gorp:gorp_spear",
+    "gorp:gorp_staff"
   ]
 }

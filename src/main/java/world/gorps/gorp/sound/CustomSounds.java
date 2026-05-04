@@ -16,6 +16,7 @@ public class CustomSounds {
 	public static final SoundEvent FLING_LONG = registerSound("fling_long");
 	public static final SoundEvent BELCH = registerSound("belch");
 	public static final SoundEvent GULP =  registerSound("gulp");
+	public static final SoundEvent CHOMP = registerSound("chomp");
 
 	private static SoundEvent registerSound(String id) {
 		Identifier identifier = Identifier.fromNamespaceAndPath(GorpsWorld.MOD_ID, id);

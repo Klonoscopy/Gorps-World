@@ -25,8 +25,6 @@ import java.util.List;
 public class GorpSpearItem extends Item {
     public static final int THROW_THRESHOLD_TIME = 10;
     public static final float BASE_DAMAGE = 8.0F;
-    public static final float PROJECTILE_SHOOT_POWER = 2.5F;
-    private ItemStack itemStack;
 
     public GorpSpearItem(final Item.Properties properties) {
         super(properties);
@@ -34,7 +32,7 @@ public class GorpSpearItem extends Item {
 
     public static ItemAttributeModifiers createAttributes() {
         return ItemAttributeModifiers.builder()
-                .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 8.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+                .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, BASE_DAMAGE, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
                 .add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.9F, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
                 .build();
     }
@@ -44,7 +42,6 @@ public class GorpSpearItem extends Item {
     }
 
     public ItemUseAnimation getUseAnimation(final ItemStack itemStack) {
-        this.itemStack = itemStack;
         return ItemUseAnimation.TRIDENT;
     }
 
@@ -55,7 +52,7 @@ public class GorpSpearItem extends Item {
     public boolean releaseUsing(final ItemStack itemStack, final Level level, final LivingEntity entity, final int remainingTime) {
         if (entity instanceof Player player) {
             int timeHeld = this.getUseDuration(itemStack, entity) - remainingTime;
-            if (timeHeld < 10) {
+            if (timeHeld < THROW_THRESHOLD_TIME) {
                 return false;
             } else {
                 float jorpDraftLevel = GorpEnchantmentHelper.getJorpDraftLevel(player);
@@ -73,9 +70,9 @@ public class GorpSpearItem extends Item {
                         float yd = -Mth.sin(xRot * (float) (Math.PI / 180.0));
                         float zd = Mth.cos(yRot * (float) (Math.PI / 180.0)) * Mth.cos(xRot * (float) (Math.PI / 180.0));
                         float dist = Mth.sqrt(xd * xd + yd * yd + zd * zd);
-                        xd *= jorpDraftLevel / dist;
-                        yd *= jorpDraftLevel / dist;
-                        zd *= jorpDraftLevel / dist;
+                        xd *= 1 / dist;
+                        yd *= 1 / dist;
+                        zd *= 1 / dist;
                         player.push(xd, yd, zd);
                         if (player.onGround()) {
                             float heightDifference = 1.1999999F;

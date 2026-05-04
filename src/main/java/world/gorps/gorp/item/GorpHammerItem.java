@@ -35,7 +35,7 @@ public class GorpHammerItem extends Item {
     public static ItemAttributeModifiers createAttributes() {
         return ItemAttributeModifiers.builder()
                 .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
-                .add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.2F, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+                .add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.0F, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
                 .build();
     }
 
@@ -113,7 +113,7 @@ public class GorpHammerItem extends Item {
 
     public static boolean canSmashAttack(final LivingEntity attacker, final ItemStack itemStack) {
         if (attacker instanceof Player player) {
-            return !player.onGround()
+            return (Math.abs(player.getDeltaMovement().y) > 1e-5)
                     && !player.onClimbable()
                     && !player.isPassenger()
                     && !(player.getCooldowns().isOnCooldown(itemStack))

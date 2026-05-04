@@ -16,8 +16,7 @@ class JorpMobEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(final ServerLevel level, final LivingEntity mob, final int amplifier) {
-        float strength = mob.isInWater() ? (amplifier * 0.15F) : (amplifier * 0.07F);
-        float jorpPower = strength + 0.25F;
+        float jorpPower = (amplifier * 0.08F) + (!mob.isInWater() ? 0.44F : 0.2F);
         if (mob instanceof ServerPlayer player) {
             ServerPlayNetworking.send(player, new JorpEffectPayload(jorpPower));
         } else {

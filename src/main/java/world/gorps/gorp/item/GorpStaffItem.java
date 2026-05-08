@@ -104,7 +104,7 @@ public class GorpStaffItem extends Item {
     }
 
     public static final float KNOCKBACK_POWER = 1.1F;
-    public static final int KNOCKBACK_RANGE = 4;
+    public static final int KNOCKBACK_RANGE = 5;
 
     private static double getKnockbackPower(final LivingEntity nearby) {
         return KNOCKBACK_POWER * (1.0F - nearby.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE) * 0.5F);
@@ -115,7 +115,7 @@ public class GorpStaffItem extends Item {
             Vec3 direction = nearby.position().subtract(entity.position());
             double knockbackPower = getKnockbackPower(nearby);
             Vec3 knockbackVector = direction.normalize().scale(knockbackPower);
-            nearby.push(knockbackVector.x + (enchantLevel * 0.3F), 0.7F + (enchantLevel * 0.1F), knockbackVector.z + (enchantLevel * 0.3F));
+            nearby.push(knockbackVector.x + (enchantLevel * 0.3F), 0.98F + (enchantLevel * 0.1F), knockbackVector.z + (enchantLevel * 0.3F));
             if (nearby instanceof ServerPlayer otherPlayer) {
                 otherPlayer.connection.send(new ClientboundSetEntityMotionPacket(otherPlayer));
             }

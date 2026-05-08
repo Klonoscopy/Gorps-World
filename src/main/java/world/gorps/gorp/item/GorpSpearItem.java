@@ -1,13 +1,19 @@
 package world.gorps.gorp.item;
 
+import net.minecraft.core.Direction;
+import net.minecraft.core.Holder;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.MoverType;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
@@ -17,8 +23,10 @@ import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.Vec3;
+import org.jspecify.annotations.Nullable;
+import world.gorps.gorp.GorpsWorld;
 import world.gorps.gorp.enchantment.GorpEnchantmentHelper;
+import world.gorps.gorp.sound.CustomSounds;
 
 import java.util.List;
 
@@ -41,22 +49,44 @@ public class GorpSpearItem extends Item {
         return new Tool(List.of(), 1.0F, 2, false);
     }
 
+    @Override
     public ItemUseAnimation getUseAnimation(final ItemStack itemStack) {
         return ItemUseAnimation.TRIDENT;
     }
 
+    @Override
     public int getUseDuration(final ItemStack itemStack, final LivingEntity user) {
         return 72000;
     }
 
+    public static int enchantLevel(LivingEntity entity) {
+        return GorpEnchantmentHelper.getJorpDraftLevel(entity);
+    }
+
+    public static final Identifier MY_MODIFIER_ID =
+            Identifier.fromNamespaceAndPath(GorpsWorld.MOD_ID, "my_modifier");
+
+    private static void addModifier(Player player, Holder<Attribute> attribute, String name, double amount, AttributeModifier.Operation operation) {
+        AttributeInstance instance = player.getAttribute(attribute);
+        if (instance == null) return;
+
+        Identifier id = Identifier.fromNamespaceAndPath(GorpsWorld.MOD_ID, name);
+        instance.removeModifier(id);
+        instance.addTransientModifier(new AttributeModifier(id, amount, operation));
+    }
+    private static void applyModifiers(Player player) {
+        addModifier(player, Attributes.FRICTION_MODIFIER,  "friction",   -0.4,  AttributeModifier.Operation.ADD_VALUE);
+        addModifier(player, Attributes.AIR_DRAG_MODIFIER,   "air_drag",  -0.45,  AttributeModifier.Operation.ADD_VALUE);
+    }
+    @Override
     public boolean releaseUsing(final ItemStack itemStack, final Level level, final LivingEntity entity, final int remainingTime) {
         if (entity instanceof Player player) {
             int timeHeld = this.getUseDuration(itemStack, entity) - remainingTime;
             if (timeHeld < THROW_THRESHOLD_TIME) {
                 return false;
             } else {
-                float jorpDraftLevel = GorpEnchantmentHelper.getJorpDraftLevel(player);
-                if (!(jorpDraftLevel > 0) || !player.isPassenger()) {
+                float jorpDraftLevel = enchantLevel(player);
+                if (!player.isPassenger()) {
                     if (itemStack.nextDamageWillBreak()) {
                         return false;
                     } else {
@@ -70,14 +100,16 @@ public class GorpSpearItem extends Item {
                         float yd = -Mth.sin(xRot * (float) (Math.PI / 180.0));
                         float zd = Mth.cos(yRot * (float) (Math.PI / 180.0)) * Mth.cos(xRot * (float) (Math.PI / 180.0));
                         float dist = Mth.sqrt(xd * xd + yd * yd + zd * zd);
-                        xd *= 1 / dist;
-                        yd *= 1 / dist;
-                        zd *= 1 / dist;
-                        player.push(xd, yd, zd);
-                        if (player.onGround()) {
-                            float heightDifference = 1.1999999F;
-                            player.move(MoverType.SELF, new Vec3(0.0, heightDifference, 0.0));
-                        }
+                        float power = (Mth.clamp(timeHeld, 10F, 25F) * 0.15F) * ((jorpDraftLevel * 0.18F) + 1F);
+                        xd *= power / dist;
+                        yd *= power / dist;
+                        zd *= power / dist;
+                        applyModifiers(player);
+                        player.setDeltaMovement(xd, yd, zd);
+//                        player.push(xd, yd, zd);
+                        player.sendOverlayMessage(Component.literal("Power: " + power));
+                        SoundEvent sound = timeHeld < 35F ? CustomSounds.FLING_SHORT : CustomSounds.FLING_NORMAL;
+                        level.playPlayerSound(sound, SoundSource.PLAYERS, 1.0F, 1.0F);
                         return true;
                     }
                 } else {
@@ -89,14 +121,11 @@ public class GorpSpearItem extends Item {
         }
     }
 
+    @Override
     public InteractionResult use(final Level level, final Player player, final InteractionHand hand) {
         ItemStack itemInHand = player.getItemInHand(hand);
-        if (itemInHand.nextDamageWillBreak()) {
-            return InteractionResult.FAIL;
-        } else {
-            player.startUsingItem(hand);
-            return InteractionResult.SUCCESS;
-        }
+        player.startUsingItem(hand);
+        return InteractionResult.CONSUME;
     }
 
 }
